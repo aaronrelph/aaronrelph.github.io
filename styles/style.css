@@ -1,0 +1,144 @@
+/*
+
+	Site Name: Aaron Relph - Product/UX Designer
+	Site URL: http://www.imgonnarelph.com
+	Author: Aaron Relph
+
+*/
+
+/*---------- 1. GENERAL STYLES ----------*/
+
+html, body {
+	background:#FFF top left;
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	margin:0px;
+	color: #333;
+}
+
+a {color:#e54c40; text-decoration: none;}
+
+
+/*---------- Section 1 (HOME) ----------*/
+
+#section-1 {
+  padding-top: 80px;
+  text-align:center;
+}
+
+	#section-1 .imaaron {
+		color:#e54c40;
+		font-size:60px;
+		display:block;
+		margin: 30px 0 50px;
+	}
+		
+	#section-1 .visualdesign {
+		font-size:22px;
+		display:block;
+		line-height: 40px;
+	}
+
+#section-end {
+	text-align:center;
+	margin: 100px auto;
+	font-size:36px;
+}
+
+
+/*---------- Section 4 (CONTACT) ----------*/
+
+#section-1 .icon {
+	font-family: 'Entypo Social';
+	font-size: 60px;
+	color:#333;
+}
+
+#social {
+	margin: 50px 0;
+	font-family: 'Entypo Social';
+	font-size: 60px;
+}
+
+#social a {
+	color:#333;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #FFF;
+}
+
+#social a:hover {
+	color:#e54c40;
+}
+
+
+/*---------- ANIMATION ----------*/
+
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+
+/*---------- FONTS ----------*/
+
+
+@font-face {
+    font-family: 'Entypo Social';
+    src: url('fonts/entypo/entypo-social.eot');
+    src: url('fonts/entypo/entypo-social.eot?#iefix') format('embedded-opentype'),
+         url('fonts/entypo/entypo-social.woff') format('woff'),
+         url('fonts/entypo/entypo-social.ttf') format('truetype'),
+         url('fonts/entypo/entypo-social.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
