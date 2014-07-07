@@ -18,6 +18,13 @@ html, body {
 
 a {color:#e54c40; text-decoration: none;}
 
+.photo {
+	width: 80px;
+margin: 20px auto 10px auto;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
 
 /*---------- Section 1 (HOME) ----------*/
 
@@ -31,8 +38,9 @@ a {color:#e54c40; text-decoration: none;}
 		font-size:60px;
 		display:block;
 		margin: 30px 0 50px;
+		font-weight:300;
 	}
-		
+
 	#section-1 .visualdesign {
 		font-size:22px;
 		display:block;
@@ -89,7 +97,7 @@ a {color:#e54c40; text-decoration: none;}
 		opacity: 0;
 		-moz-transform: translateY(20px);
 	}
-	
+
 	100% {
 		opacity: 1;
 		-moz-transform: translateY(0);
@@ -101,7 +109,7 @@ a {color:#e54c40; text-decoration: none;}
 		opacity: 0;
 		-o-transform: translateY(20px);
 	}
-	
+
 	100% {
 		opacity: 1;
 		-o-transform: translateY(0);
@@ -113,7 +121,7 @@ a {color:#e54c40; text-decoration: none;}
 		opacity: 0;
 		transform: translateY(20px);
 	}
-	
+
 	100% {
 		opacity: 1;
 		transform: translateY(0);
