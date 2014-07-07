@@ -11,12 +11,24 @@
 html, body {
 	background:#FFF top left;
 	font-family: 'Merriweather', serif;
-	font-weight: 400;
+	font-weight: 300;
 	margin:0px;
 	color: #333;
 }
 
-a {color:#e54c40; text-decoration: none;}
+a {
+	color:#333;
+	text-decoration: none;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+
+a:hover {
+	color:#e54c40;
+}
 
 .photo {
 	width: 80px;
@@ -35,49 +47,27 @@ border-radius: 50%;
 
 	#section-1 .imaaron {
 		color:#e54c40;
-		font-size:60px;
+		font-size:2.2rem;
 		display:block;
-		margin: 30px 0 50px;
-		font-weight:300;
+		margin: 30px 0 40px;
 	}
 
 	#section-1 .visualdesign {
-		font-size:22px;
+		font-size:1.3rem;
 		display:block;
 		line-height: 40px;
 	}
 
-#section-end {
-	text-align:center;
-	margin: 100px auto;
-	font-size:36px;
+.end {
+	color:#CCC;
 }
 
-
-/*---------- Section 4 (CONTACT) ----------*/
-
-#section-1 .icon {
-	font-family: 'Entypo Social';
-	font-size: 60px;
-	color:#333;
-}
 
 #social {
-	margin: 50px 0;
+	margin: 40px 0;
 	font-family: 'Entypo Social';
-	font-size: 60px;
+	font-size: 3.2rem;
 }
-
-#social a {
-	color:#333;
-	text-decoration: none;
-	text-shadow: 1px 1px 0 #FFF;
-}
-
-#social a:hover {
-	color:#e54c40;
-}
-
 
 /*---------- ANIMATION ----------*/
 
