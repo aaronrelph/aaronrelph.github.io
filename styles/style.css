@@ -1,8 +1,7 @@
 /*
 
-	Site Name: Aaron Relph - Product/UX Designer
-	Site URL: http://www.imgonnarelph.com
-	Author: Aaron Relph
+	Aaron Relph - Product/UX Designer
+	http://www.imgonnarelph.com
 
 */
 
@@ -13,11 +12,11 @@ html, body {
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
 	margin:0px;
-	color: #333;
+	color: #454545;
 }
 
 a {
-	color:#333;
+	color:#454545;
 	text-decoration: none;
 	-o-transition:.3s;
 	-ms-transition:.3s;
@@ -26,19 +25,17 @@ a {
 	transition:.3s;
 }
 
-a:hover {
-	color:#e54c40;
-}
+a:hover {	color:#e54c40; }
 
 .photo {
 	width: 80px;
-margin: 20px auto 10px auto;
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
-border-radius: 50%;
+	margin: 20px auto 10px auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 
-/*---------- Section 1 (HOME) ----------*/
+/*---------- Content ----------*/
 
 #section-1 {
   padding-top: 80px;
@@ -52,7 +49,7 @@ border-radius: 50%;
 		margin: 30px 0 40px;
 	}
 
-	#section-1 .visualdesign {
+	#section-1 .about {
 		font-size:1.3rem;
 		display:block;
 		line-height: 40px;
