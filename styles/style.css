@@ -66,65 +66,49 @@ a:hover {	color:#e54c40; }
 	font-size: 3.2rem;
 }
 
+.gi {
+	display: inline-block;
+	font-family: GumIcons;
+	font-style: normal;
+	font-size:1.7rem;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.gi-logo:before {
+	content: '\e027';
+}
+
 /*---------- ANIMATION ----------*/
 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(20px);
-	}	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-	}
+.fade-in {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
 }
 
-@-moz-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-moz-transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateY(0);
-	}
+.fade-in.one {
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
-
-@-o-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-o-transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateY(0);
-	}
-}
-
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.fadeInUp {
-	-webkit-animation-name: fadeInUp;
-	-moz-animation-name: fadeInUp;
-	-o-animation-name: fadeInUp;
-	animation-name: fadeInUp;
-}
-
 
 /*---------- FONTS ----------*/
-
 
 @font-face {
     font-family: 'Entypo Social';
@@ -135,5 +119,15 @@ a:hover {	color:#e54c40; }
          url('fonts/entypo/entypo-social.svg') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+	font-family: 'GumIcons';
+	src: url('fonts/gumroad/gumicons.eot');
+	src: url('fonts/gumroad/gumicons.eot?#iefix') format('embedded-opentype'),
+	url('fonts/gumroad/gumicons.woff') format('woff'),
+	url('fonts/gumroad/gumicons.ttf') format('truetype'),
+	url('fonts/gumroad/gumicons.svg#gumicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
