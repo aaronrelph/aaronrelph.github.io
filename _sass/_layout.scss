@@ -17,7 +17,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $brand-color;
     }
 }
 
@@ -30,7 +30,6 @@
     }
 
     .page-link {
-        color: $text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -90,7 +89,6 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
