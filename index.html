@@ -4,5 +4,22 @@ layout: default
 
 <div class="home">
 
+  <h1 class="post-title">Hi.</h1>
+
+  <p>I'm Aaron, a Product Designer at  Gumroad in San Francisco.</p>
+  <p>Sea ridens dolorem senserit ut, harum sonet et sit. His ignota signiferumque mediocritatem ad. Mel ei alii tractatos omittantur, ius ea audiam omittam mandamus. Sale novum eam ex, et molestie pertinax vix, quem cetero timeam te cum. Mei ea maluisset intellegam. Ius persius nonumes corrumpit at, ne pro etiam invidunt. <a href="/about">Get to know me</a></p>
+
+  <h3>Latest posts</h3>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
 </div>

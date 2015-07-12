@@ -23,6 +23,28 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+.sidebar {
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background:
+  linear-gradient(
+  rgba(229, 76, 64, 0.45),
+  rgba(229, 76, 64, 0.95)
+  ),
+  url(../aaron-relph.jpg) top center;
+  background-size:cover;
+
+  .sidebar-sticky {
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    left: 2rem;
+  }
+}
+
+
+
+
 .container {
   margin: 50px;
 }
@@ -35,6 +57,7 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+    line-height: 44px;
 }
 
 
@@ -91,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $link-color;
+    color: $brand-color;
     text-decoration: none;
     transition: all .2s ease;
 
@@ -99,7 +122,7 @@ a {
     }
 
     &:hover {
-        color: $brand-color;
+        color: darken( $brand-color, 30% );
     }
 }
 

@@ -1,11 +1,17 @@
 ---
 layout: page
-title: Me
+title: About
 permalink: /about/
 ---
 
-I am a product designer in San Francisco, California. I design with usability and simplicity in mind.
+I’m Aaron, a product designer at Gumroad working to help creators make a living doing what they love. Join us.
 
-I'm most interested in solving complex problems with unique solutions and building meaningful products that have a real impact on people’s lives.
+![Aaron Relph](/aaron-relph-small.png "Aaron Relph")
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Previously I’ve lead design at a Fianance/Sport startup, and spent time at other ventures in healthcare, tech, and so on.
+
+I like food and drinks. Some people say i look like Rogger from the show Doug, i disagree. I mumble sometime, and I don’t like repeating myself.
+
+I can be found occasionally tweeting or dribbling but usually not doing either of those.
+
+Mostly i like to travel.
