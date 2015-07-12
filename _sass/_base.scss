@@ -25,7 +25,7 @@ body {
 
 .sidebar {
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.6);
   background:
   linear-gradient(
   rgba(229, 76, 64, 0.45),
@@ -33,6 +33,7 @@ body {
   ),
   url(../aaron-relph.jpg) top center;
   background-size:cover;
+  box-sizing: border-box;
 
   .sidebar-sticky {
     position: absolute;
@@ -42,11 +43,8 @@ body {
   }
 }
 
-
-
-
 .container {
-  margin: 50px;
+  margin: ($spacing-unit * 2) 0 0 35%;
 }
 
 /**
@@ -106,6 +104,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    color: $header-color;
 }
 
 
@@ -180,10 +179,10 @@ pre {
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    // margin-right: auto;
+    // margin-left: auto;
+    // padding-right: $spacing-unit;
+    // padding-left: $spacing-unit;
     @extend %clearfix;
 
     @include media-query($on-laptop) {

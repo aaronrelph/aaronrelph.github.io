@@ -4,8 +4,16 @@ title: Work
 permalink: /work/
 ---
 
-I am a product designer in San Francisco, California. I design with usability and simplicity in mind.
+This is a collection of some of my most recent work. Some are side projects and some are for work. 
 
 I'm most interested in solving complex problems with unique solutions and building meaningful products that have a real impact on people’s lives.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+### Gumroad
+
+### AirBear
+
+### Gif Weather
+
+### Peanut Butter & Jams
+
+### Fantex
