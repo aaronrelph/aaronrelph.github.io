@@ -15,3 +15,11 @@ I like food and drinks. Some people say i look like Rogger from the show Doug, i
 I can be found occasionally tweeting or dribbling but usually not doing either of those.
 
 Mostly i like to travel.
+
+### Elsewhere
+
+You can find me...
+
+### This site
+
+Made ontop of Jekyyl. Hosted on Github pages. I wrote it. Font is merryweather. Thanks to this dude for this plugin https://joe8bit.com/article/jekyll-generate-body-class/

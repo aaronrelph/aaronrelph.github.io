@@ -5,6 +5,29 @@
 .url_index {
   .sidebar {
     width: 100%;
+
+    .sidebar-sticky {
+      text-align: center;
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: left;
+
+      .sidebar-sticky {
+        width: 80%;
+        position: absolute;
+        right: 2rem;
+        bottom: 1rem;
+        left: 2rem;
+      }
+    }
   }
 }
 
