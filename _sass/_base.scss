@@ -20,13 +20,12 @@ body {
     font-weight: 300;
     color: $text-color;
     background-color: #FFF;
-    -webkit-text-size-adjust: 100%;
 }
 
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.6);
+  color: rgba(255,255,255,.7);
   background:
     linear-gradient(
     rgba(229, 76, 64, 0.45),
@@ -56,7 +55,7 @@ body {
 }
 
 .container {
-  margin: ($spacing-unit + 20) 5% 0 5%;
+  margin: ($spacing-unit) 5% 0 5%;
 
   @include tablet {
     margin: ($spacing-unit + 20) 5% 0 45%;
@@ -171,9 +170,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    border: 1px solid darken($grey-color-light, 5%);
+    border-radius: 4px;
+    background-color: $grey-color-light;
 }
 
 code {
@@ -223,12 +222,16 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: rgba(255,255,255,.7);
+
+            &:hover {
+              fill: #fff;
+            }
         }
     }
 }
