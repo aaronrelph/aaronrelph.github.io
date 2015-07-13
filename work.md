@@ -4,11 +4,11 @@ title: Work
 permalink: /work/
 ---
 
-This is a collection of some of my most recent work. Some are side projects and some are for work.
+A collection of some of my most recent work. Some are side projects, some aren’t. You can also peep my my [dribble](http://www.dribbble.com/aaronrelph) for more.
 
-I'm most interested in solving complex problems with unique solutions and building meaningful products that have a real impact on people’s lives.
+### Soon.
 
-### Gumroad
+<!-- ### Gumroad
 
 This is a collection of work I've done so far at Gumroad.
 
@@ -28,4 +28,4 @@ A fun expereiment. It hasen't come to fruition yet but..
 
 ### Fantex
 
-I led design here for a bit. It was a great expereience. Here's some of the work I did (no longer live). 
+I led design here for a bit. It was a great expereience. Here's some of the work I did (no longer live). -->

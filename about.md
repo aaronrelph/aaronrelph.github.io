@@ -4,22 +4,20 @@ title: About
 permalink: /about/
 ---
 
-I’m Aaron, a product designer at Gumroad working to help creators make a living doing what they love. Join us.
+More here soon..
 
-![Aaron Relph](/aaron-relph-small.png "Aaron Relph")
-
-Previously I’ve lead design at a Fianance/Sport startup, and spent time at other ventures in healthcare, tech, and so on.
-
-I like food and drinks. Some people say i look like Rogger from the show Doug, i disagree. I mumble sometime, and I don’t like repeating myself.
-
-I can be found occasionally tweeting or dribbling but usually not doing either of those.
-
-Mostly i like to travel.
+<!-- ![Aaron Relph](/aaron-relph-small.png "Aaron Relph") -->
 
 ### Elsewhere
 
-You can find me...
+You can find me on [twitter](http://www.twitter.com/aaronrelph), [dribble](http://www.dribbble.com/aaronrelph), [instagram](http://instagram.com/aaronrelph), [github](https://github.com/aaronrelph), and even [linkedIn](http://www.linkedin.com/in/aaronrelph/) though i can't wait for the day that site enters the deadpool.
 
 ### This site
 
-Made ontop of Jekyyl. Hosted on Github pages. I wrote it. Font is merryweather. Thanks to this dude for this plugin https://joe8bit.com/article/jekyll-generate-body-class/
+Built on [Jekyll](http://jekyllrb.com/).
+
+Hosted on [Github pages](https://pages.github.com/).
+
+Font is [Merriweather](https://www.google.com/fonts/specimen/Merriweather).
+
+Thanks to [this dude](https://joe8bit.com/article/jekyll-generate-body-class/) for a body class plugin.
