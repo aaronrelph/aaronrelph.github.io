@@ -15,3 +15,5 @@ linkedin_username:  aaronrelph
 
 # Build settings
 markdown: kramdown
+gems: [bodyClass]
+ # This will require each of these gems automatically.
