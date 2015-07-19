@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'site'
-set :repo_url, 'git@github.com:aaronrelph/aaronrelph.github.io.git'
+set :repo_url, 'git@github.com:aaronrelph/imgonnarelph.git'
 
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, "/home/rails/#{fetch(:application)}"

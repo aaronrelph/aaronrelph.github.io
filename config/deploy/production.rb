@@ -6,7 +6,7 @@ set :stage, :production
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '45.55.195.106', user: 'rails', port: 22, roles: %w{web app}
+server '45.55.195.106', user: 'root', port: 22, roles: %w{web app}
 
 set :bundle_binstubs, nil
 
