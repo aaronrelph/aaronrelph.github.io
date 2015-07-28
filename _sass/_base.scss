@@ -62,7 +62,7 @@ body {
   }
 
   @include desktop {
-    margin: ($spacing-unit * 2) 5% 0 35%;
+    margin: 0 0 0 30%;
   }
 }
 
@@ -83,9 +83,15 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
+    width: 100%;
     vertical-align: middle;
+
+    &.big-image {
+    width: 110%;
+    margin: 0 auto 0 -5%;
+  }
 }
+
 
 
 

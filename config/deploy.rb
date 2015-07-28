@@ -5,7 +5,7 @@ set :application, 'site'
 set :repo_url, 'git@github.com:aaronrelph/imgonnarelph.git'
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, "/home/rails/#{fetch(:application)}"
+set :deploy_to, "/usr/share/nginx/www"
 
 # Default value for :scm is :git
 set :scm, :git
@@ -16,7 +16,7 @@ set :log_level, :debug
 # Default value for keep_releases is 5
 set :keep_releases, 5
 
-set :rvm_type, :system
+set :rvm_type, :user
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

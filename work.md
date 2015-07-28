@@ -4,9 +4,9 @@ title: Work
 permalink: /work/
 ---
 
-A collection of some of my most recent work. Some are side projects, some aren’t. You can also peep my my [dribble](http://www.dribbble.com/aaronrelph) for more.
+A collection of some of my most recent work. Some are side projects, some aren’t. You can also peep my [dribbble](http://www.dribbble.com/aaronrelph) for more.
 
-### Soon.
+#### Soon.
 
 <!-- ### Gumroad
 
