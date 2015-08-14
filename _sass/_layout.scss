@@ -60,6 +60,29 @@
   }
 }
 
+.home {
+  width: 80%;
+  margin: 80px auto 0;
+
+  @include tablet {
+    width: 60%;
+    margin: 140px auto 0;
+  }
+
+  @include desktop {
+    width: 40%;
+    margin: 140px auto 0;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
 .sidebar {
 
   a {
@@ -196,10 +219,10 @@
   width: 100%;
   margin: 0 auto;
 
-  @include desktop {
-    width: 70%;
-    margin: ($spacing-unit * 3) auto 0;
-  }
+  // @include desktop {
+  //   width: 70%;
+  //   margin: ($spacing-unit * 3) auto 0;
+  // }
 }
 
 .page-heading {
