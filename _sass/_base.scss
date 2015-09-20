@@ -11,56 +11,29 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+
+html, body {
+  height: 100%;
+}
+
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: #FFF;
-}
-
-.sidebar {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: rgba(255,255,255,.7);
-  background:
-    linear-gradient(
-    rgba(229, 76, 64, 0.45),
-    rgba(229, 76, 64, 0.95)
-    ),
-    url(../aaron-relph.png) top center;
-  background-size:cover;
-  box-sizing: border-box;
-
-  @include tablet {
-    .sidebar-sticky {
-      position: absolute;
-      right: 2rem;
-      bottom: 1rem;
-      left: 2rem;
-    }
-  }
-
-  @include desktop {
-    .sidebar-sticky {
-      position: absolute;
-      right: 2rem;
-      bottom: 1rem;
-      left: 2rem;
-    }
-  }
 }
 
 .container {
-  margin: ($spacing-unit) 5% 0 5%;
+  // position: fixed;
+  height: 100%;
 
   @include tablet {
-    margin: ($spacing-unit + 20) 5% 0 45%;
+    background: url(../aaron-relph.png) top center no-repeat;
   }
 
   @include desktop {
-    margin: 0 0 0 30%;
+    background: url(../aaron-relph.png) top right no-repeat;
   }
 }
 

@@ -60,42 +60,24 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html, body {
+  height: 100%; }
+
 body {
   font-family: "Merriweather", serif;
   font-size: 17px;
   line-height: 1.5;
   font-weight: 300;
-  color: #999;
-  background-color: #FFF; }
-
-.sidebar {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background: linear-gradient(rgba(229, 76, 64, 0.45), rgba(229, 76, 64, 0.95)), url(../aaron-relph.png) top center;
-  background-size: cover;
-  box-sizing: border-box; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .sidebar .sidebar-sticky {
-      position: absolute;
-      right: 2rem;
-      bottom: 1rem;
-      left: 2rem; } }
-  @media (min-width: 1024px) {
-    .sidebar .sidebar-sticky {
-      position: absolute;
-      right: 2rem;
-      bottom: 1rem;
-      left: 2rem; } }
+  color: #999; }
 
 .container {
-  margin: 30px 5% 0 5%; }
+  height: 100%; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .container {
-      margin: 50px 5% 0 45%; } }
+      background: url(../aaron-relph.png) top center no-repeat; } }
   @media (min-width: 1024px) {
     .container {
-      margin: 0 0 0 30%; } }
+      background: url(../aaron-relph.png) top right no-repeat; } }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -214,84 +196,21 @@ pre {
 /**
  * Sidebar
  */
-.url_index .sidebar {
-  width: 100%; }
-  .url_index .sidebar .sidebar-sticky {
-    text-align: center;
-    width: 750px;
-    margin: 0 auto; }
-  .url_index .sidebar .site-title {
-    font-size: 50px;
-    margin-bottom: 30px; }
-  .url_index .sidebar p, .url_index .sidebar .site-nav {
-    font-size: 24px;
-    line-height: 50px;
-    margin-bottom: 30px; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .url_index .sidebar .sidebar-sticky {
-      width: 70%; } }
-  @media screen and (max-width: 767px) {
-    .url_index .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: left; }
-      .url_index .sidebar .site-title {
-        font-size: 40px;
-        margin-bottom: 20px;
-        line-height: normal; }
-      .url_index .sidebar p, .url_index .sidebar .site-nav {
-        font-size: 17px;
-        line-height: 35px;
-        margin-bottom: 20px; }
-      .url_index .sidebar .sidebar-sticky {
-        width: 90%;
-        position: absolute;
-        right: 1rem;
-        bottom: 1rem;
-        left: 1rem; } }
-
 .home {
   width: 80%;
-  margin: 80px auto 0; }
+  padding: 80px 0 0 30px; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .home {
-      width: 60%;
-      margin: 140px auto 0; } }
+      width: 40%;
+      padding: 140px 0 0 70px; } }
   @media (min-width: 1024px) {
     .home {
-      width: 40%;
-      margin: 140px auto 0; } }
+      width: 30%;
+      padding: 150px 0 0 100px; } }
   .home h1 {
     margin-bottom: 40px; }
   .home p {
     margin-bottom: 20px; }
-
-.sidebar a {
-  color: #FFF; }
-.sidebar .site-title {
-  font-size: 36px;
-  line-height: 56px;
-  margin-bottom: 15px;
-  display: block; }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 40%;
-    text-align: left; } }
-@media (min-width: 1024px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 30%;
-    text-align: left; } }
 
 .site-nav {
   line-height: 56px; }
@@ -363,10 +282,6 @@ pre {
 /**
  * Page content
  */
-.page-content {
-  width: 100%;
-  margin: 0 auto; }
-
 .page-heading {
   font-size: 20px; }
 
