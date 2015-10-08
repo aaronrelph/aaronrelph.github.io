@@ -1,0 +1,11 @@
+<nav class="site-nav">
+
+  <a class="page-link" href="/">Me</a>
+
+  {% for page in site.pages %}
+    {% if page.title %}
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+  {% endfor %}
+
+</nav>

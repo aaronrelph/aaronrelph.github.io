@@ -69,15 +69,17 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #999; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      background: url(../aaron-relph.png) top center no-repeat;
+      background-size: cover; } }
+  @media (min-width: 1024px) {
+    body {
+      background: url(../aaron-relph.png) top right no-repeat;
+      background-size: cover; } }
 
 .container {
   height: 100%; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-      background: url(../aaron-relph.png) top center no-repeat; } }
-  @media (min-width: 1024px) {
-    .container {
-      background: url(../aaron-relph.png) top right no-repeat; } }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -175,7 +177,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after {
+.wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -213,72 +215,16 @@ pre {
     margin-bottom: 20px; }
 
 .site-nav {
-  line-height: 56px; }
-  .site-nav .menu-icon {
-    display: none; }
+  float: right;
+  margin: 30px; }
   .site-nav .page-link {
-    line-height: 1.5; }
+    line-height: 1.5;
+    color: #666; }
     .site-nav .page-link:hover {
-      border-bottom: 3px solid #fff; }
+      color: #e54c40; }
     .site-nav .page-link:not(:first-child) {
-      margin-left: 20px; }
+      margin-left: 40px; }
 
-.url_about_ .site-nav .page-link {
-  border-bottom: 3px solid #DDD; }
-
-/**
- * Site footer
- */
-.site-footer {
-  padding: 30px 0; }
-
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px; }
-
-.contact-list a,
-.social-links a {
-  margin-left: 20px; }
-  .contact-list a:first-child,
-  .social-links a:first-child {
-    margin-left: 0px; }
-
-.footer-col-wrapper {
-  font-size: 15px;
-  color: #999;
-  margin-left: -15px; }
-
-.footer-col {
-  float: left;
-  margin-bottom: 15px;
-  padding-left: 15px; }
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2)); }
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
-
-@media screen and (max-width: 1024px) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 1024px) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
 /**
  * Page content
  */

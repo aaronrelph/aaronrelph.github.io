@@ -22,19 +22,20 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
+
+    @include tablet {
+      background: url(../aaron-relph.png) top center no-repeat;
+      background-size: cover;
+    }
+
+    @include desktop {
+      background: url(../aaron-relph.png) top right no-repeat;
+      background-size: cover;
+    }
 }
 
 .container {
-  // position: fixed;
   height: 100%;
-
-  @include tablet {
-    background: url(../aaron-relph.png) top center no-repeat;
-  }
-
-  @include desktop {
-    background: url(../aaron-relph.png) top right no-repeat;
-  }
 }
 
 /**
@@ -62,9 +63,6 @@ img {
     margin: 0 auto 0 -5%;
   }
 }
-
-
-
 
 /**
  * Figures
