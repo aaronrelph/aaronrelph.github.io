@@ -40,15 +40,40 @@
   }
 }
 
+@keyframes portfoliofadeInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    border-top: 0px solid #EFEFE9;
+    border-left: 0px solid transparent;
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    border-top: 1000px solid #EFEFE9;
+    border-left: 1000px solid transparent;
+  }
+}
+
 /*
  * CSS Page Transitions
  */
 .m-scene {
   /** Basic styles for an animated element */
   .scene_element {
-    -webkit-animation-duration: 0.25s;
-    animation-duration: 0.25s;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
     transition-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+  }
+
+  .portfolio_element {
+    -webkit-animation-duration: 2.0s;
+    animation-duration: 2.0s;
+    transition-timing-function: ease-ease;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
@@ -70,5 +95,10 @@
   .scene_element--fadeinright {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
+  }
+
+  .portfolio_element--portfoliofadeinright {
+    -webkit-animation-name: portfoliofadeInRight;
+    animation-name: portfoliofadeInRight;
   }
 }

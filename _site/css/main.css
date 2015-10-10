@@ -24,6 +24,17 @@
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
+@keyframes portfoliofadeInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    border-top: 0px solid #EFEFE9;
+    border-left: 0px solid transparent; }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    border-top: 1000px solid #EFEFE9;
+    border-left: 1000px solid transparent; } }
 /*
  * CSS Page Transitions
  */
@@ -33,9 +44,15 @@
   /** An element that fades in and slides up */
   /** An element that fades in and slides from the right */ }
   .m-scene .scene_element {
-    -webkit-animation-duration: 0.25s;
-    animation-duration: 0.25s;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
     transition-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  .m-scene .portfolio_element {
+    -webkit-animation-duration: 2.0s;
+    animation-duration: 2.0s;
+    transition-timing-function: ease-ease;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
   .m-scene .scene_element--fadein {
@@ -47,6 +64,9 @@
   .m-scene .scene_element--fadeinright {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight; }
+  .m-scene .portfolio_element--portfoliofadeinright {
+    -webkit-animation-name: portfoliofadeInRight;
+    animation-name: portfoliofadeInRight; }
 
 /**
  * Reset some basic elements
@@ -77,6 +97,8 @@ body {
     body {
       background: url(../aaron-relph.png) top right no-repeat;
       background-size: cover; } }
+  body.portfolio {
+    background: #fff; }
 
 .container {
   height: 100%; }
@@ -214,9 +236,21 @@ pre {
   .home p {
     margin-bottom: 20px; }
 
+.portfolio-wrapper {
+  width: 80%;
+  padding: 80px 0 0 30px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .portfolio-wrapper {
+      width: 80%;
+      padding: 140px 0 0 70px; } }
+  @media (min-width: 1024px) {
+    .portfolio-wrapper {
+      width: 70%;
+      padding: 150px 0 0 100px; } }
+
 .site-nav {
   float: right;
-  margin: 30px; }
+  margin: 30px 40px; }
   .site-nav .page-link {
     line-height: 1.5;
     color: #666; }
@@ -252,6 +286,53 @@ pre {
 .post-link {
   display: block;
   font-size: 18px; }
+
+.project-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px 30px;
+  display: block;
+  margin-bottom: 20px;
+  color: #666; }
+  .project-wrapper:hover {
+    border-color: #ccc;
+    background: rgba(255, 255, 255, 0.5);
+    color: #e54c40; }
+
+.logo {
+  width: 0;
+  height: 0;
+  border-top: 1000px solid #EFEFE9;
+  border-left: 1000px solid transparent;
+  position: absolute;
+  right: 0;
+  z-index: -1; }
+
+.gumroad-logo {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  right: 170px;
+  top: 170px;
+  animation-delay: 1.3s; }
+
+.feature-section {
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+  padding-top: 60px; }
+  .feature-section .feature-breakdown {
+    list-style: none;
+    margin: 0px; }
+    .feature-section .feature-breakdown:after {
+      clear: both; }
+    .feature-section .feature-breakdown li {
+      display: inline-block;
+      width: 49%;
+      padding-right: 60px;
+      box-sizing: border-box; }
+
+.date {
+  display: inline-block; }
 
 /**
  * Posts

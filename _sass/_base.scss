@@ -17,21 +17,25 @@ html, body {
 }
 
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
 
-    @include tablet {
-      background: url(../aaron-relph.png) top center no-repeat;
-      background-size: cover;
-    }
+  @include tablet {
+    background: url(../aaron-relph.png) top center no-repeat;
+    background-size: cover;
+  }
 
-    @include desktop {
-      background: url(../aaron-relph.png) top right no-repeat;
-      background-size: cover;
-    }
+  @include desktop {
+    background: url(../aaron-relph.png) top right no-repeat;
+    background-size: cover;
+  }
+
+  &.portfolio {
+    background: #fff;
+  }
 }
 
 .container {
