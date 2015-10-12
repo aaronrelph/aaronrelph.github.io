@@ -327,7 +327,16 @@ pre {
   padding: 20px;
   width: 100%;
   text-align: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: absolute; }
+  .sub-nav .features-nav.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    bottom: auto; }
 .sub-nav ul {
   list-style: none;
   margin: 0px;
@@ -337,28 +346,51 @@ pre {
     margin-right: 30px; }
 
 .feature-section {
-  margin-top: 60px;
-  padding: 0 60px; }
+  padding: 60px 0px; }
   .feature-section .feature-main-content {
     width: 60%;
-    margin: 80px auto;
+    margin: 0px auto 60px;
     text-align: center; }
+    .feature-section .feature-main-content .worked-on {
+      font-family: Helvetica Neue;
+      font-size: 13px;
+      margin-top: 60px; }
+      .feature-section .feature-main-content .worked-on .yes, .feature-section .feature-main-content .worked-on .no {
+        padding: 4px 10px;
+        border: 1px solid #36A9AE;
+        color: #36A9AE;
+        display: inline-block;
+        border-radius: 4px;
+        margin-right: 8px; }
+      .feature-section .feature-main-content .worked-on .no {
+        border: 1px solid #ddd;
+        color: #CCC; }
   .feature-section .feature-main {
-    background: #EFEFE9;
-    padding: 60px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
+    background: #36A9AE;
+    padding: 120px 60px;
     margin-bottom: 60px; }
+    .feature-section .feature-main.airbear {
+      background: #0091C9; }
   .feature-section .feature-breakdown {
-    list-style: none;
-    margin: 0px; }
-    .feature-section .feature-breakdown:after {
-      clear: both; }
-    .feature-section .feature-breakdown li {
-      float: left;
-      width: 49%;
-      padding-right: 60px;
-      box-sizing: border-box; }
+    width: 80%;
+    margin: 0 auto; }
+    .feature-section .feature-breakdown ul {
+      list-style: none;
+      margin: 0px; }
+      .feature-section .feature-breakdown ul:after {
+        clear: both; }
+      .feature-section .feature-breakdown ul li {
+        float: left;
+        width: 49%;
+        padding-right: 60px;
+        box-sizing: border-box; }
+        .feature-section .feature-breakdown ul li .feature-breakdown-image {
+          border: 1px solid #DDD;
+          border-radius: 4px;
+          padding: 10px;
+          margin-bottom: 20px;
+          height: 200px;
+          overflow: hidden; }
 
 .clear {
   clear: both; }
