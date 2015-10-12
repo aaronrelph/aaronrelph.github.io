@@ -319,6 +319,19 @@ pre {
   top: 170px;
   animation-delay: 1.3s; }
 
+.feature-breakdown-test {
+  margin-bottom: 80px;
+  text-align: center; }
+  .feature-breakdown-test .left, .feature-breakdown-test .right {
+    width: 50%;
+    float: left;
+    padding: 60px;
+    box-sizing: border-box; }
+  .feature-breakdown-test .left {
+    background: #EFEFE9; }
+  .feature-breakdown-test .right {
+    background: #DDD; }
+
 .sub-nav .features-nav {
   bottom: 0;
   background: #fff;
@@ -367,8 +380,7 @@ pre {
         color: #CCC; }
   .feature-section .feature-main {
     background: #36A9AE;
-    padding: 120px 60px;
-    margin-bottom: 60px; }
+    padding: 120px 60px; }
     .feature-section .feature-main.airbear {
       background: #0091C9; }
   .feature-section .feature-breakdown {

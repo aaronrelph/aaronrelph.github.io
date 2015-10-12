@@ -142,6 +142,26 @@
   animation-delay: 1.3s;
 }
 
+.feature-breakdown-test {
+  margin-bottom: 80px;
+  text-align: center;
+
+  .left, .right {
+    width: 50%;
+    float: left;
+    padding: 60px;
+    box-sizing: border-box;
+  }
+
+  .left{
+    background: #EFEFE9;
+  }
+
+  .right {
+    background: #DDD;
+  }
+}
+
 .sub-nav {
 
 
@@ -213,7 +233,6 @@
   .feature-main {
     background: #36A9AE;
     padding: 120px 60px;
-    margin-bottom: 60px;
 
     &.airbear { background: #0091C9 }
   }
