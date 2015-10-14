@@ -233,11 +233,15 @@
       background: -ms-linear-gradient(top, #38b4a9 0%,#3f8cca 100%); /* IE10+ */
       background: linear-gradient(to bottom, #38b4a9 0%,#3f8cca 100%); /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b4a9', endColorstr='#3f8cca',GradientType=0 ); /* IE6-9 */
+
+      img {
+        width: auto;
+      }
     }
+    &.fantex { background: #BED8EC; img { width: auto; } }
 
     img {
       max-height: 800px;
-      width: auto;
     }
   }
 

@@ -391,9 +391,14 @@ pre {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b4a9', endColorstr='#3f8cca',GradientType=0 );
       /* IE6-9 */ }
+      .feature-section .feature-main.airbear img {
+        width: auto; }
+    .feature-section .feature-main.fantex {
+      background: #BED8EC; }
+      .feature-section .feature-main.fantex img {
+        width: auto; }
     .feature-section .feature-main img {
-      max-height: 800px;
-      width: auto; }
+      max-height: 800px; }
   .feature-section .feature-breakdown {
     text-align: center; }
     .feature-section .feature-breakdown img {
