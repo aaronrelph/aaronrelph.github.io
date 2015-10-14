@@ -314,6 +314,8 @@ pre {
     border-top: 1000px solid #EFEFE9; }
   .logo.airbear {
     border-top: 1000px solid #eee; }
+  .logo.pbj {
+    border-top: 1000px solid #333; }
 
 .gumroad-logo {
   width: 270px;
@@ -396,6 +398,25 @@ pre {
     .feature-section .feature-main.fantex {
       background: #BED8EC; }
       .feature-section .feature-main.fantex img {
+        width: auto; }
+    .feature-section .feature-main.pbj {
+      background: #723022;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #723022 0%, #cc6a51 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #723022), color-stop(100%, #cc6a51));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #723022 0%, #cc6a51 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #723022 0%, #cc6a51 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #723022 0%, #cc6a51 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #723022 0%, #cc6a51 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#723022', endColorstr='#cc6a51',GradientType=0 );
+      /* IE6-9 */ }
+      .feature-section .feature-main.pbj img {
         width: auto; }
     .feature-section .feature-main img {
       max-height: 800px; }
