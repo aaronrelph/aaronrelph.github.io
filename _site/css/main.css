@@ -330,7 +330,7 @@ pre {
   background: #fff;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 20px;
+  padding: 30px 20px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -351,12 +351,27 @@ pre {
     display: inline-block;
     margin-right: 30px; }
 
+.browser-wrapper {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); }
+  .browser-wrapper .bar {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 15px;
+    text-align: left; }
+    .browser-wrapper .bar .circle {
+      border-radius: 50%;
+      background: #ccc;
+      width: 10px;
+      height: 10px;
+      display: inline-block; }
+
 .feature-section {
   padding: 120px 0px 0px; }
   .feature-section .feature-main-content {
-    width: 60%;
-    margin: 0px auto 60px;
-    text-align: center; }
+    width: 50%;
+    margin: 0px auto 60px; }
     .feature-section .feature-main-content .worked-on {
       font-family: Helvetica Neue;
       font-size: 13px;
@@ -372,7 +387,7 @@ pre {
         border: 1px solid #ddd;
         color: #CCC; }
   .feature-section .feature-main {
-    padding: 120px 60px;
+    padding: 100px 100px;
     text-align: center; }
     .feature-section .feature-main.gumroad {
       background: #36A9AE; }
@@ -394,11 +409,9 @@ pre {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b4a9', endColorstr='#3f8cca',GradientType=0 );
       /* IE6-9 */ }
       .feature-section .feature-main.airbear img {
-        width: auto; }
+        width: 400px; }
     .feature-section .feature-main.fantex {
-      background: #BED8EC; }
-      .feature-section .feature-main.fantex img {
-        width: auto; }
+      background: #eee; }
     .feature-section .feature-main.pbj {
       background: #723022;
       /* Old browsers */
@@ -416,10 +429,6 @@ pre {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#723022', endColorstr='#cc6a51',GradientType=0 );
       /* IE6-9 */ }
-      .feature-section .feature-main.pbj img {
-        width: auto; }
-    .feature-section .feature-main img {
-      max-height: 800px; }
   .feature-section .feature-breakdown {
     text-align: center; }
     .feature-section .feature-breakdown img {
@@ -444,6 +453,21 @@ pre {
 
 .clear {
   clear: both; }
+
+.footer-next-nav {
+  padding: 60px;
+  text-align: center;
+  display: block; }
+  .footer-next-nav.gumroad {
+    background: #EFEFE9; }
+  .footer-next-nav.fantex {
+    background: #024378;
+    color: #fff; }
+  .footer-next-nav .up-next {
+    font-family: Helvetica Neue;
+    font-size: 14px;
+    position: absolute;
+    left: 0; }
 
 /**
  * Posts
