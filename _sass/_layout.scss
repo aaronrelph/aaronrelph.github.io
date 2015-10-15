@@ -278,6 +278,10 @@
       float: left;
       padding: 80px;
       box-sizing: border-box;
+
+      p {
+        margin-top: 60px;
+      }
     }
 
     &.gumroad {
@@ -305,11 +309,14 @@
   &.gumroad { background: $gumroad-color }
   &.fantex { background: $fantex-color; color: #fff; }
 
+  &:hover {
+    background: darken($fantex-color, 10%);
+  }
+
   .up-next {
-    font-family: Helvetica Neue;
-    font-size: 14px;
-    position: absolute;
+    color: rgba(225, 225, 225, .4);
     left: 0;
+    margin-right: 15px;
   }
 }
 /**

@@ -438,6 +438,8 @@ pre {
       float: left;
       padding: 80px;
       box-sizing: border-box; }
+      .feature-section .feature-breakdown .left p, .feature-section .feature-breakdown .right p {
+        margin-top: 60px; }
     .feature-section .feature-breakdown.gumroad .left {
       background: #EFEFE9; }
     .feature-section .feature-breakdown.gumroad .right {
@@ -463,11 +465,12 @@ pre {
   .footer-next-nav.fantex {
     background: #024378;
     color: #fff; }
+  .footer-next-nav:hover {
+    background: #012746; }
   .footer-next-nav .up-next {
-    font-family: Helvetica Neue;
-    font-size: 14px;
-    position: absolute;
-    left: 0; }
+    color: rgba(225, 225, 225, 0.4);
+    left: 0;
+    margin-right: 15px; }
 
 /**
  * Posts
