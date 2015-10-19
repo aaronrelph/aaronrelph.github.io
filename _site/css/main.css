@@ -334,9 +334,8 @@ pre {
   background: #fff;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 30px 20px;
+  padding: 30px 0 30px 100px;
   width: 100%;
-  text-align: center;
   box-sizing: border-box;
   position: absolute; }
   .sub-nav .features-nav.sticky {
