@@ -314,6 +314,8 @@ pre {
     border-top: 1000px solid #EFEFE9; }
   .logo.fantex {
     border-top: 1000px solid #024378; }
+  .logo.gifweather {
+    border-top: 1000px solid #222; }
   .logo.airbear {
     border-top: 1000px solid #eee; }
   .logo.pbj {
@@ -414,6 +416,10 @@ pre {
         width: 400px; }
     .feature-section .feature-main.fantex {
       background: #024378; }
+    .feature-section .feature-main.gifweather {
+      background: #222; }
+      .feature-section .feature-main.gifweather img {
+        width: 400px; }
     .feature-section .feature-main.pbj {
       background: #723022;
       /* Old browsers */

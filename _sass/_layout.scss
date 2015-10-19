@@ -134,6 +134,7 @@
 
   &.gumroad   { border-top: 1000px solid #EFEFE9; }
   &.fantex   { border-top: 1000px solid $fantex-color; }
+  &.gifweather   { border-top: 1000px solid $gifweather-color; }
   &.airbear   { border-top: 1000px solid #eee; }
   &.pbj       { border-top: 1000px solid #333; }
 }
@@ -254,6 +255,13 @@
       }
     }
     &.fantex { background: $fantex-color; }
+    &.gifweather {
+      background: $gifweather-color;
+
+        img {
+          width: 400px;
+        }
+    }
     &.pbj {
       background: #723022; /* Old browsers */
       background: -moz-linear-gradient(top, #723022 0%, #cc6a51 100%); /* FF3.6+ */
