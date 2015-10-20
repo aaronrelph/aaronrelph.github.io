@@ -346,30 +346,33 @@ pre {
     z-index: 100;
     border-top: 0;
     bottom: auto; }
+    .sub-nav .features-nav.sticky button {
+      -webkit-appearance: none;
+      background: transparent;
+      border: 0;
+      outline: 0; }
+    .sub-nav .features-nav.sticky svg {
+      padding: 5px; }
+    .sub-nav .features-nav.sticky .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-top: -45px;
+      margin-left: -35px;
+      width: 70px;
+      height: 90px;
+      transform: rotate(90deg);
+      opacity: 1; }
+      .sub-nav .features-nav.sticky .arrow:hover polyline {
+        stroke-width: 6;
+        transition: all 250ms ease-in-out; }
+      .sub-nav .features-nav.sticky .arrow:active polyline {
+        stroke-width: 9;
+        transition: all 100ms ease-in-out; }
   .sub-nav .features-nav .back-to-top {
     float: right; }
-.sub-nav button {
-  -webkit-appearance: none;
-  background: transparent;
-  border: 0;
-  outline: 0; }
-.sub-nav svg {
-  padding: 5px; }
-.sub-nav .arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -45px;
-  margin-left: -35px;
-  width: 70px;
-  height: 90px;
-  transform: rotate(90deg); }
-  .sub-nav .arrow:hover polyline {
-    stroke-width: 6;
-    transition: all 250ms ease-in-out; }
-  .sub-nav .arrow:active polyline {
-    stroke-width: 9;
-    transition: all 100ms ease-in-out; }
+  .sub-nav .features-nav .arrow {
+    opacity: 0; }
 .sub-nav ul {
   list-style: none;
   margin: 0px;

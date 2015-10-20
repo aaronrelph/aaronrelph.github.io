@@ -169,42 +169,48 @@
       z-index: 100;
       border-top: 0;
       bottom: auto;
+
+      button {
+      -webkit-appearance: none;
+      background: transparent;
+      border: 0;
+      outline:0;
+      }
+
+      svg {
+        padding: 5px;
+      }
+
+      .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -45px;
+        margin-left: -35px;
+        width: 70px;
+        height: 90px;
+        transform: rotate(90deg);
+        opacity: 1;
+
+        &:hover polyline {
+          stroke-width: 6;
+          transition: all 250ms ease-in-out;
+        }
+
+        &:active polyline {
+          stroke-width: 9;
+          transition: all 100ms ease-in-out;
+        }
+      }
+
     }
 
     .back-to-top {
       float: right;
     }
-  }
 
-  button {
-  -webkit-appearance: none;
-  background: transparent;
-  border: 0;
-  outline:0;
-  }
-
-  svg {
-    padding: 5px;
-  }
-
-  .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -45px;
-    margin-left: -35px;
-    width: 70px;
-    height: 90px;
-    transform: rotate(90deg);
-
-    &:hover polyline {
-      stroke-width: 6;
-      transition: all 250ms ease-in-out;
-    }
-
-    &:active polyline {
-      stroke-width: 9;
-      transition: all 100ms ease-in-out;
+    .arrow {
+      opacity: 0;
     }
   }
 
