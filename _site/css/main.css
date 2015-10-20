@@ -334,7 +334,7 @@ pre {
   background: #fff;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 30px 0 30px 100px;
+  padding: 30px 100px 30px 100px;
   width: 100%;
   box-sizing: border-box;
   position: absolute; }
@@ -346,6 +346,30 @@ pre {
     z-index: 100;
     border-top: 0;
     bottom: auto; }
+  .sub-nav .features-nav .back-to-top {
+    float: right; }
+.sub-nav button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0; }
+.sub-nav svg {
+  padding: 5px; }
+.sub-nav .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+  transform: rotate(90deg); }
+  .sub-nav .arrow:hover polyline {
+    stroke-width: 6;
+    transition: all 250ms ease-in-out; }
+  .sub-nav .arrow:active polyline {
+    stroke-width: 9;
+    transition: all 100ms ease-in-out; }
 .sub-nav ul {
   list-style: none;
   margin: 0px;
@@ -353,6 +377,8 @@ pre {
   .sub-nav ul li {
     display: inline-block;
     margin-right: 30px; }
+    .sub-nav ul li:last-child {
+      margin-right: 0px; }
 
 .browser-wrapper {
   background: #fff;
