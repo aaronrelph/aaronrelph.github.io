@@ -182,24 +182,18 @@
       }
 
       .arrow {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        margin-top: -45px;
-        margin-left: -35px;
-        width: 70px;
-        height: 90px;
-        transform: rotate(90deg);
         opacity: 1;
 
         &:hover polyline {
           stroke-width: 6;
           transition: all 250ms ease-in-out;
+          stroke: $brand-color;
         }
 
         &:active polyline {
           stroke-width: 9;
           transition: all 100ms ease-in-out;
+          stroke: $brand-color;
         }
       }
 
@@ -210,6 +204,14 @@
     }
 
     .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-top: -45px;
+      margin-left: -35px;
+      width: 70px;
+      height: 90px;
+      transform: rotate(90deg);
       opacity: 0;
     }
   }
@@ -359,6 +361,7 @@
   padding: 60px;
   text-align: center;
   display: block;
+  font-size: 30px;
 
   &.gumroad { background: $gumroad-color }
   &.fantex { background: $fantex-color; color: #fff; }
@@ -368,9 +371,11 @@
   }
 
   .up-next {
-    color: rgba(225, 225, 225, .4);
+    color: rgba(0, 0, 0, .4);
     left: 0;
     margin-right: 15px;
+    font-size: 12px;
+    font-family: helvetica;
   }
 }
 /**
