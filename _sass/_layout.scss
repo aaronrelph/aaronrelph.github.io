@@ -157,10 +157,10 @@
   animation-delay: 1.3s;
 
   @include tablet {
-    width: 270px;
-    height: 270px;
+    width: 200px;
+    height: 200px;
     position: absolute;
-    right: 170px;
+    right: 100px;
     top: 170px;
     animation-delay: 1.3s;
   }
@@ -183,10 +183,28 @@
     background: #fff;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 0 30px 20px;
     width: 100%;
     box-sizing: border-box;
     position: absolute;
+
+    @include tablet {
+      bottom: 0;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 30px 0 30px 60px;
+      width: 100%;
+    }
+
+    @include desktop {
+      bottom: 0;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 30px 100px 30px 100px;
+      width: 100%;
+    }
 
     &.sticky {
       position: fixed;
@@ -223,7 +241,6 @@
           stroke: $brand-color;
         }
       }
-
     }
 
     .back-to-top {
@@ -285,8 +302,17 @@
   padding: 120px 0px 0px;
 
   .feature-main-content {
-    width: 50%;
-    margin: 0px auto 60px;
+    margin: 0px 30px 30px 30px;
+
+    @include tablet {
+      width: 60%;
+      margin: 0px auto 30px;
+    }
+
+    @include desktop {
+      width: 50%;
+      margin: 0px auto 30px;
+    }
 
     .worked-on {
       font-family: Helvetica Neue;
@@ -310,8 +336,16 @@
   }
 
   .feature-main {
-    padding: 100px 100px;
+    padding: 10px;
     text-align: center;
+
+    @include tablet {
+      padding: 50px 50px;
+    }
+
+    @include desktop {
+      padding: 100px 100px;
+    }
 
     &.gumroad { background: #36A9AE }
     &.airbear {
