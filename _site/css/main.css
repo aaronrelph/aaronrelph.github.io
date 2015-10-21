@@ -527,10 +527,18 @@ pre {
     .feature-section .feature-breakdown img {
       max-height: 800px; }
     .feature-section .feature-breakdown .left, .feature-section .feature-breakdown .right {
-      width: 50%;
-      float: left;
-      padding: 80px;
+      padding: 10px;
       box-sizing: border-box; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .feature-section .feature-breakdown .left, .feature-section .feature-breakdown .right {
+          padding: 30px;
+          float: left;
+          width: 50%; } }
+      @media (min-width: 1024px) {
+        .feature-section .feature-breakdown .left, .feature-section .feature-breakdown .right {
+          padding: 80px;
+          float: left;
+          width: 50%; } }
       .feature-section .feature-breakdown .left p, .feature-section .feature-breakdown .right p {
         margin-top: 60px; }
     .feature-section .feature-breakdown.gumroad .left {

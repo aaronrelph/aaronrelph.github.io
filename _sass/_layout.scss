@@ -391,10 +391,22 @@
     }
 
     .left, .right {
-      width: 50%;
-      float: left;
-      padding: 80px;
+
+
+      padding: 10px;
       box-sizing: border-box;
+
+      @include tablet {
+        padding: 30px;
+        float: left;
+        width: 50%;
+      }
+
+      @include desktop {
+        padding: 80px;
+        float: left;
+        width: 50%;
+      }
 
       p {
         margin-top: 60px;
