@@ -187,6 +187,7 @@
     width: 100%;
     box-sizing: border-box;
     position: absolute;
+    display: none;
 
     @include tablet {
       bottom: 0;
@@ -195,6 +196,7 @@
       border-bottom: 1px solid #ddd;
       padding: 30px 0 30px 60px;
       width: 100%;
+      display: block;
     }
 
     @include desktop {
@@ -204,6 +206,7 @@
       border-bottom: 1px solid #ddd;
       padding: 30px 100px 30px 100px;
       width: 100%;
+      display: block;
     }
 
     &.sticky {
@@ -378,16 +381,7 @@
           width: 400px;
         }
     }
-    &.pbj {
-      background: #723022; /* Old browsers */
-      background: -moz-linear-gradient(top, #723022 0%, #cc6a51 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#723022), color-stop(100%,#cc6a51)); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #723022 0%,#cc6a51 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, #723022 0%,#cc6a51 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, #723022 0%,#cc6a51 100%); /* IE10+ */
-      background: linear-gradient(to bottom, #723022 0%,#cc6a51 100%); /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#723022', endColorstr='#cc6a51',GradientType=0 ); /* IE6-9 */
-    }
+    &.pbj { background: $pbj-color; }
   }
 
 
