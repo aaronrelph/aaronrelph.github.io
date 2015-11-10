@@ -289,7 +289,7 @@
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, .15);;
 
   .bar {
     border-bottom: 1px solid #ddd;
@@ -297,18 +297,18 @@
     text-align: left;
 
     @include tablet {
-      padding: 3px 15px;
+      padding: 8px 18px;
     }
 
     @include desktop {
-      padding: 3px 15px;
+      padding: 8px 18px;
     }
 
     .circle {
       border-radius: 50%;
       background: #ccc;
-      width: 8px;
-      height: 8px;
+      width: 10px;
+      height: 10px;
       display: inline-block;
     }
   }
@@ -364,7 +364,6 @@
       padding: 100px 100px;
     }
 
-    &.gumroad { background: #36A9AE }
     &.airbear {
       background: #38b4a9; /* Old browsers */
       background: -moz-linear-gradient(top, #38b4a9 0%, #3f8cca 100%); /* FF3.6+ */
@@ -374,20 +373,19 @@
       background: -ms-linear-gradient(top, #38b4a9 0%,#3f8cca 100%); /* IE10+ */
       background: linear-gradient(to bottom, #38b4a9 0%,#3f8cca 100%); /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b4a9', endColorstr='#3f8cca',GradientType=0 ); /* IE6-9 */
+    }
 
-      img {
+    .img-max-width {
+      width: 300px;
+
+      @include tablet {
+        width: 400px;
+      }
+
+      @include desktop {
         width: 400px;
       }
     }
-    &.fantex { background: $fantex-color; }
-    &.gifweather {
-      background: $gifweather-color;
-
-        img {
-          width: 400px;
-        }
-    }
-    &.pbj { background: $pbj-color; }
   }
 
 
