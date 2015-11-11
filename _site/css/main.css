@@ -446,7 +446,7 @@ pre {
         padding: 8px 18px; } }
     .browser-wrapper .bar .circle {
       border-radius: 50%;
-      background: #ccc;
+      background: #ddd;
       width: 10px;
       height: 10px;
       display: inline-block; }
@@ -482,10 +482,10 @@ pre {
     text-align: center; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .feature-section .feature-main {
-        padding: 50px 50px; } }
+        padding: 20px 50px 80px; } }
     @media (min-width: 1024px) {
       .feature-section .feature-main {
-        padding: 100px 100px; } }
+        padding: 30px 100px 100px; } }
     .feature-section .feature-main.airbear {
       background: #38b4a9;
       /* Old browsers */

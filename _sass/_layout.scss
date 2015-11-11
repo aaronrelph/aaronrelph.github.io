@@ -303,7 +303,7 @@
 
     .circle {
       border-radius: 50%;
-      background: #ccc;
+      background: $grey-color-light;
       width: 10px;
       height: 10px;
       display: inline-block;
@@ -354,11 +354,11 @@
     text-align: center;
 
     @include tablet {
-      padding: 50px 50px;
+      padding: 20px 50px 80px;
     }
 
     @include desktop {
-      padding: 100px 100px;
+      padding: 30px 100px 100px;
     }
 
     &.airbear {
