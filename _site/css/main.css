@@ -236,6 +236,11 @@ pre {
     margin-bottom: 40px; }
   .home p {
     margin-bottom: 20px; }
+  .home .date {
+    display: inline;
+    font-size: 14px;
+    color: #999;
+    margin-left: 15px; }
 
 .portfolio-wrapper {
   width: 80%;
@@ -565,16 +570,14 @@ pre {
   .footer-next-nav:hover {
     background: #e54c40;
     color: #fff; }
-    .footer-next-nav:hover .arrow {
-      opacity: 1; }
-      .footer-next-nav:hover .arrow:hover polyline {
-        stroke-width: 8;
-        transition: all 250ms ease-in-out;
-        stroke: #fff; }
-      .footer-next-nav:hover .arrow:active polyline {
-        stroke-width: 12;
-        transition: all 100ms ease-in-out;
-        stroke: #fff; }
+    .footer-next-nav:hover .arrow polyline {
+      stroke-width: 8;
+      transition: all 250ms ease-in-out;
+      stroke: #fff; }
+    .footer-next-nav:hover .arrow:active polyline {
+      stroke-width: 12;
+      transition: all 100ms ease-in-out;
+      stroke: #fff; }
   .footer-next-nav .up-next {
     color: rgba(0, 0, 0, 0.4);
     left: 0;
@@ -587,8 +590,9 @@ pre {
     right: 100px;
     width: 25px;
     height: 25px;
-    transform: rotate(180deg);
-    opacity: 0; }
+    transform: rotate(180deg); }
+    .footer-next-nav .arrow polyline {
+      stroke: #999; }
 
 /**
  * Posts

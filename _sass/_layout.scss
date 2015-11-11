@@ -24,6 +24,13 @@
   p {
     margin-bottom: 20px;
   }
+
+  .date {
+    display: inline;
+    font-size: 14px;
+    color: #999;
+    margin-left: 15px;
+  }
 }
 
 .portfolio-wrapper {
@@ -453,9 +460,8 @@
     color: $white-color;
 
     .arrow {
-      opacity: 1;
 
-      &:hover polyline {
+      & polyline {
         stroke-width: 8;
         transition: all 250ms ease-in-out;
         stroke: $white-color;
@@ -484,7 +490,10 @@
     width: 25px;
     height: 25px;
     transform: rotate(180deg);
-    opacity: 0;
+
+    & polyline {
+      stroke: $grey-color;
+    }
   }
 }
 /**
