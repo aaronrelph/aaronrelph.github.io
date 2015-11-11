@@ -117,14 +117,21 @@ a {
     border-bottom: 1px solid $brand-color;
     padding-bottom: 3px;
 
-    &:visited {
-    }
-
     &:hover {
         color: darken( $brand-color, 20% );
         border-bottom: 2px solid darken($brand-color, 20%);;
         padding-bottom: 5px;
+
+        &.twitter { border-bottom: 2px solid $twitter-brand-color; }
+        &.dribbble { border-bottom: 2px solid $dribbble-brand-color; }
+        &.instagram { border-bottom: 2px solid $instagram-brand-color; }
+        &.github { border-bottom: 2px solid $github-brand-color; }
     }
+
+    &.twitter { color: $twitter-brand-color; border-bottom: 1px solid $twitter-brand-color; }
+    &.dribbble { color: $dribbble-brand-color; border-bottom: 1px solid $dribbble-brand-color; }
+    &.instagram { color: $instagram-brand-color; border-bottom: 1px solid $instagram-brand-color; }
+    &.github { color: $github-brand-color; border-bottom: 1px solid $github-brand-color; }
 }
 
 

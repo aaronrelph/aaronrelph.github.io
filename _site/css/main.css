@@ -165,6 +165,26 @@ a {
     color: #a82117;
     border-bottom: 2px solid #a82117;
     padding-bottom: 5px; }
+    a:hover.twitter {
+      border-bottom: 2px solid #55acee; }
+    a:hover.dribbble {
+      border-bottom: 2px solid #ea4c89; }
+    a:hover.instagram {
+      border-bottom: 2px solid #3f729b; }
+    a:hover.github {
+      border-bottom: 2px solid #333; }
+  a.twitter {
+    color: #55acee;
+    border-bottom: 1px solid #55acee; }
+  a.dribbble {
+    color: #ea4c89;
+    border-bottom: 1px solid #ea4c89; }
+  a.instagram {
+    color: #3f729b;
+    border-bottom: 1px solid #3f729b; }
+  a.github {
+    color: #333;
+    border-bottom: 1px solid #333; }
 
 /**
  * Blockquotes
