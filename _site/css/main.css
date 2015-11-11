@@ -311,10 +311,10 @@ pre {
   color: #666; }
   .project-wrapper:hover {
     border-color: #ccc;
-    background: #e54c40;
-    color: #fff;
-    border: 1px solid #e54c40;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: #e54c40;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
     transform: translateY(-2px); }
   .project-wrapper:active {
     transform: translateY(1px);

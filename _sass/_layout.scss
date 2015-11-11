@@ -132,10 +132,10 @@
 
   &:hover {
     border-color: #ccc;
-    background: $brand-color;
-    color: $white-color;
-    border: 1px solid $brand-color;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, .1);
+    background: $white-color;
+    color: $brand-color;
+    border: 1px solid $grey-color-light;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .05);
     transform: translateY(-2px);
   }
 
