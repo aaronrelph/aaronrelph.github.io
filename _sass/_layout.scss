@@ -438,20 +438,48 @@
   text-align: center;
   display: block;
   font-size: 30px;
+  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
 
   &.gumroad { background: $gumroad-color }
   &.fantex { background: $fantex-color; color: #fff; }
 
   &:hover {
-    background: darken($fantex-color, 10%);
+    background: $brand-color;
+    color: $white-color;
+
+    .arrow {
+      opacity: 1;
+
+      &:hover polyline {
+        stroke-width: 8;
+        transition: all 250ms ease-in-out;
+        stroke: $white-color;
+      }
+
+      &:active polyline {
+        stroke-width: 12;
+        transition: all 100ms ease-in-out;
+        stroke: $white-color;
+      }
+    }
   }
 
   .up-next {
     color: rgba(0, 0, 0, .4);
     left: 0;
-    margin-right: 15px;
     font-size: 12px;
-    font-family: helvetica;
+    display: block;
+    font-weight: 500;
+  }
+
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(180deg);
+    opacity: 0;
   }
 }
 /**
