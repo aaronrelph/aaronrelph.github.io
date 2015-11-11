@@ -349,6 +349,12 @@
       margin-bottom: 40px;
     }
 
+    p {
+      width: 700px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
     .img-max-width {
       width: 300px;
 
@@ -381,7 +387,7 @@
       }
 
       @include desktop {
-        padding: 80px;
+        padding: 50px;
         float: left;
         width: 50%;
       }
@@ -408,17 +414,17 @@
 }
 
 .post-title {
-    font-size: 28px;
-    letter-spacing: -1px;
-    line-height: 1;
+  font-size: 28px;
+  letter-spacing: -1px;
+  line-height: 1;
 
-    @include tablet {
-        font-size: 36px;
-    }
+  @include tablet {
+      font-size: 36px;
+  }
 
-    @include desktop {
-        font-size: 36px;
-    }
+  @include desktop {
+      font-size: 36px;
+  }
 }
 
 .post-content {
