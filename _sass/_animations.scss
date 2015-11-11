@@ -101,4 +101,11 @@
     -webkit-animation-name: portfoliofadeInRight;
     animation-name: portfoliofadeInRight;
   }
+
+  /** Reverse "exit" animations */
+  &.is-exiting {
+      .scene_element {
+        animation-direction: alternate-reverse;
+      }
+  }
 }

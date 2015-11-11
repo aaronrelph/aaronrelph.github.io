@@ -113,13 +113,17 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
-    transition: all .2s ease-in-out;
+    transition: all .15s ease-in-out;
+    border-bottom: 1px solid $brand-color;
+    padding-bottom: 3px;
 
     &:visited {
     }
 
     &:hover {
-        color: darken( $brand-color, 30% );
+        color: darken( $brand-color, 20% );
+        border-bottom: 2px solid darken($brand-color, 20%);;
+        padding-bottom: 5px;
     }
 }
 

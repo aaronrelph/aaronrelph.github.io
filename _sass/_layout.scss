@@ -52,25 +52,21 @@
 
 .site-nav {
   margin: 30px 0 0;
-  text-align: center;
-  border-bottom: 1px solid $grey-color-light;
-  padding-bottom: 30px;
   font-family: $header-font-family;
 
   @include tablet {
     float: right;
     margin: 30px 40px;
-    border-bottom: 0;
   }
 
   @include desktop {
     float: right;
     margin: 30px 40px;
-    border-bottom: 0;
   }
 
   .page-link {
     color: #666;
+    border-bottom: 0;
 
     &:hover {
       color: $brand-color;
@@ -123,6 +119,7 @@
 }
 
 .project-wrapper {
+  font-family: $header-font-family;
   border: 1px solid $grey-color-light;
   border-radius: 4px;
   padding: 15px 20px;
@@ -137,6 +134,8 @@
     border: 1px solid $grey-color-light;
     box-shadow: 0 2px 0 rgba(0, 0, 0, .05);
     transform: translateY(-2px);
+    font-weight: 500;
+    padding: 15px 20px;
   }
 
   &:active {
@@ -467,6 +466,7 @@
 .footer-next-nav {
   background: $grey-color-lighter;
   border-top: 1px solid $grey-color-light;
+  border-bottom: 0;
   display: block;
   padding: 60px;
   text-align: center;
@@ -477,6 +477,7 @@
   &:hover {
     background: $brand-color;
     color: $white-color;
+    padding: 60px;
 
     .arrow {
 
