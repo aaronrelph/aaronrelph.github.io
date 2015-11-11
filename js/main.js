@@ -1,25 +1,27 @@
 $(function(){
   'use strict';
 
-  var $body   = $('html, body'),
-      options = {
+  content = $('#main').smoothState({
     prefetch: true,
     cacheLength: 2,
-    onStart: {
+      onStart: {
       duration: 1500,
       render: function ($container) {
         $container.addClass('is-exiting');
-        smoothState.restartCSSAnimations();
-        $body.animate({ 'scrollTop': 0 });
+        console.log('start');
       }
     },
     onReady: {
-      duration: 0,
-      render: function ($container, $newContent) {
-        $container.html($newContent);
-        $container.removeClass('is-exiting');
+        duration: 1500,
+        render: function ($container, $newContent) {
+          $container.html($newContent);
+          $container.removeClass('is-exiting');
+          console.log('ready');
+        }
       }
+    },
+    onAfter: function($container, $newContent) {
+      console.log('all done');
     }
-  },
-  smoothState = $('#main').smoothState(options).data('smoothState');
+  }).data('smoothState');
 });
