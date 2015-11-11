@@ -53,7 +53,7 @@
 .site-nav {
   margin: 30px 0 0;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $grey-color-light;
   padding-bottom: 30px;
   font-family: $header-font-family;
 
@@ -73,7 +73,7 @@
     color: #666;
 
     &:hover {
-      color: #e54c40;
+      color: $brand-color;
     }
 
     &:not(:first-child) {
@@ -123,17 +123,25 @@
 }
 
 .project-wrapper {
-  border: 1px solid #ddd;
+  border: 1px solid $grey-color-light;
   border-radius: 4px;
-  padding: 15px 30px;
+  padding: 15px 20px;
   display: block;
   margin-bottom: 20px;
   color: #666;
 
   &:hover {
     border-color: #ccc;
-    background: rgba(255, 255, 255, .5);;
-    color: #e54c40;
+    background: $brand-color;
+    color: $white-color;
+    border: 1px solid $brand-color;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .1);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
   }
 }
 
@@ -186,7 +194,7 @@
     bottom: 0;
     font-family: $header-font-family;
     font-size: 18px;
-    background: #e54c40;
+    background: $brand-color;
     padding-left: 100px;
     height: 80px;
     width: 100%;
@@ -288,12 +296,12 @@
 
 .browser-wrapper {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid $grey-color-light;
   border-radius: 4px;
   box-shadow: 0px 0px 80px rgba(0, 0, 0, .15);;
 
   .bar {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $grey-color-light;
     padding: 0 8px;
     text-align: left;
 

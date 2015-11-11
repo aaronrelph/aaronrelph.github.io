@@ -5,24 +5,24 @@
 
 
 // Variables
-$base-font-family:     "Merriweather", serif;
-$header-font-family:   "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
-$base-font-size:       17px;
-$small-font-size:      $base-font-size * 0.875;
-$base-line-height:     1.5;
+$base-font-family:        "Merriweather", serif;
+$header-font-family:      "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
+$base-font-size:          17px;
+$small-font-size:         $base-font-size * 0.875;
+$base-line-height:        1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:            30px;
 
-$header-color:     #454545;
-$text-color:       #999;
-$background-color: #e1e1e1;
+$header-color:            #454545;
+$text-color:              #999;
+$background-color:        #e1e1e1;
 
-$white-color:            #fff;
-$grey-color:             #999;
-$grey-color-light:       #ddd;
-$grey-color-lighter:     #eee;
-$grey-color-lightest:    #f5f5f5;
-$grey-color-dark:        darken($grey-color, 25%);
+$white-color:             #fff;
+$grey-color:              #999;
+$grey-color-light:        #ddd;
+$grey-color-lighter:      #eee;
+$grey-color-lightest:     #f5f5f5;
+$grey-color-dark:         darken($grey-color, 25%);
 
 // Brand colors
 $brand-color:      #e54c40;

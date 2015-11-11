@@ -305,14 +305,20 @@ pre {
 .project-wrapper {
   border: 1px solid #ddd;
   border-radius: 4px;
-  padding: 15px 30px;
+  padding: 15px 20px;
   display: block;
   margin-bottom: 20px;
   color: #666; }
   .project-wrapper:hover {
     border-color: #ccc;
-    background: rgba(255, 255, 255, 0.5);
-    color: #e54c40; }
+    background: #e54c40;
+    color: #fff;
+    border: 1px solid #e54c40;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px); }
+  .project-wrapper:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
 
 .portfolio-main-container {
   height: 100vh; }
