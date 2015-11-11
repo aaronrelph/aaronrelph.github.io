@@ -46,6 +46,7 @@
   text-align: center;
   border-bottom: 1px solid #ddd;
   padding-bottom: 30px;
+  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
 
   @include tablet {
     float: right;
@@ -134,13 +135,12 @@
 .logo {
   width: 0;
   height: 0;
-  border-top: 1000px solid #EFEFE9;
+  border-top: 1000px solid $grey-color-lighter;
   border-left: 1000px solid transparent;
   position: absolute;
   right: 0;
   z-index: -1;
 
-  &.gumroad   { border-top: 1000px solid $gumroad-color; }
   &.fantex   { border-top: 1000px solid $fantex-color; }
   &.gifweather   { border-top: 1000px solid $gifweather-color; }
   &.airbear   { border-top: 1000px solid #eee; }
@@ -149,8 +149,6 @@
 }
 
 .brand-logo {
-  width: 80px;
-  height: 80px;
   position: absolute;
   right: 60px;
   top: 145px;
@@ -158,24 +156,23 @@
   display: none;
 
   @include tablet {
-    width: 200px;
-    height: 200px;
     position: absolute;
     right: 100px;
     top: 170px;
     animation-delay: 1.3s;
-    display: block;
+    display: none;
   }
 
   @include desktop {
-    width: 270px;
-    height: 270px;
+    max-width: 270px;
     position: absolute;
     right: 170px;
     top: 170px;
     animation-delay: 1.3s;
     display: block;
   }
+
+  &.gumroad { max-width: 400px; top: 270px; }
 }
 
 

@@ -145,7 +145,8 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 500;
   color: #454545; }
 
 /**
@@ -252,7 +253,8 @@ pre {
   margin: 30px 0 0;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .site-nav {
       float: right;
@@ -314,13 +316,11 @@ pre {
 .logo {
   width: 0;
   height: 0;
-  border-top: 1000px solid #EFEFE9;
+  border-top: 1000px solid #eee;
   border-left: 1000px solid transparent;
   position: absolute;
   right: 0;
   z-index: -1; }
-  .logo.gumroad {
-    border-top: 1000px solid #eee; }
   .logo.fantex {
     border-top: 1000px solid #eee; }
   .logo.gifweather {
@@ -331,8 +331,6 @@ pre {
     border-top: 1000px solid #eee; }
 
 .brand-logo {
-  width: 80px;
-  height: 80px;
   position: absolute;
   right: 60px;
   top: 145px;
@@ -340,22 +338,22 @@ pre {
   display: none; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .brand-logo {
-      width: 200px;
-      height: 200px;
       position: absolute;
       right: 100px;
       top: 170px;
       animation-delay: 1.3s;
-      display: block; } }
+      display: none; } }
   @media (min-width: 1024px) {
     .brand-logo {
-      width: 270px;
-      height: 270px;
+      max-width: 270px;
       position: absolute;
       right: 170px;
       top: 170px;
       animation-delay: 1.3s;
       display: block; } }
+  .brand-logo.gumroad {
+    max-width: 400px;
+    top: 270px; }
 
 .sub-nav .features-nav {
   bottom: 0;
