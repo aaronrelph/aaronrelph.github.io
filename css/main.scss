@@ -4,48 +4,34 @@
 @charset "utf-8";
 
 
-// Our variables
-$base-font-family: 'Merriweather', serif;
-$base-font-size:   17px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// Variables
+$base-font-family:     "Merriweather", serif;
+$header-font-family:   "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
+$base-font-size:       17px;
+$small-font-size:      $base-font-size * 0.875;
+$base-line-height:     1.5;
 
 $spacing-unit:     30px;
 
 $header-color:     #454545;
 $text-color:       #999;
 $background-color: #e1e1e1;
-$brand-color:      #e54c40;
 
-$white-color:      #fff;
-$grey-color:       #999;
-$grey-color-light: #ddd;
-$grey-color-lighter: #eee;
-$grey-color-lightest: #f5f5f5;
-$grey-color-dark:  darken($grey-color, 25%);
+$white-color:            #fff;
+$grey-color:             #999;
+$grey-color-light:       #ddd;
+$grey-color-lighter:     #eee;
+$grey-color-lightest:    #f5f5f5;
+$grey-color-dark:        darken($grey-color, 25%);
 
 // Brand colors
-$gumroad-color:         #eee;
-$fantex-color:          #eee;
-$gifweather-color:      #eee;
-$pbj-color:             #eee;
+$brand-color:      #e54c40;
 
 // Width of the content area
-$content-width:    800px;
-
-$on-mobile:          640px;
-$on-tablet:        768px;
+$content-width:     800px;
+$on-mobile:         640px;
+$on-tablet:         768px;
 $on-desktop:        1024px;
-$on-laptop:        1024px;
-$on-palm:        1024px;
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
