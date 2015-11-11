@@ -503,6 +503,8 @@ pre {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b4a9', endColorstr='#3f8cca',GradientType=0 );
       /* IE6-9 */ }
+    .feature-section .feature-main h2 {
+      margin-bottom: 40px; }
     .feature-section .feature-main .img-max-width {
       width: 300px; }
       @media (min-width: 768px) and (max-width: 1023px) {
