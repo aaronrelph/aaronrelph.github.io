@@ -396,41 +396,6 @@
       }
     }
   }
-
-
-  .feature-breakdown {
-    text-align: center;
-
-    img {
-      max-height: 800px;
-    }
-
-    .left, .right {
-      padding: 10px;
-      box-sizing: border-box;
-
-      @include tablet {
-        padding: 30px;
-        float: left;
-        width: 50%;
-      }
-
-      @include desktop {
-        padding: 50px;
-        float: left;
-        width: 50%;
-      }
-
-      p {
-        margin-top: 60px;
-      }
-    }
-
-    &.gumroad {
-      .left { background: $grey-color-lighter; }
-      .right { background: darken($grey-color-lighter, 10%); }
-    }
-  }
 }
 
 .clear {
