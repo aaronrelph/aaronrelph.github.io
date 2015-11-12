@@ -23,18 +23,19 @@ body {
   font-weight: 300;
   color: $text-color;
   background-size: cover;
-
-  @include tablet {
-    background: url(../aaron-relph.png) top center no-repeat;
-  }
-
-  @include desktop {
-    background: url(../aaron-relph.png) top right no-repeat;
-  }
-
-  &.portfolio {
-    background: #fff;
-  }
+  -webkit-font-smoothing: antialiased;
+  //
+  // @include tablet {
+  //   background: url(../aaron-relph.png) top center no-repeat;
+  // }
+  //
+  // @include desktop {
+  //   background: url(../aaron-relph.png) top right no-repeat;
+  // }
+  // 
+  // &.portfolio {
+  //   background: #fff;
+  // }
 }
 
 .container {

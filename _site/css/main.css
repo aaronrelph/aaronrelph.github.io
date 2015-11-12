@@ -38,37 +38,37 @@
 /*
  * CSS Page Transitions
  */
-.m-scene {
+.main {
   /** Basic styles for an animated element */
   /** An element that fades in */
   /** An element that fades in and slides up */
   /** An element that fades in and slides from the right */
   /** Reverse "exit" animations */ }
-  .m-scene .scene_element {
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
+  .main .scene_element {
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     transition-timing-function: ease-in;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
-  .m-scene .portfolio_element {
+  .main .portfolio_element {
     -webkit-animation-duration: 2.0s;
     animation-duration: 2.0s;
     transition-timing-function: ease-ease;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
-  .m-scene .scene_element--fadein {
+  .main .scene_element--fadein {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn; }
-  .m-scene .scene_element--fadeinup {
+  .main .scene_element--fadeinup {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp; }
-  .m-scene .scene_element--fadeinright {
+  .main .scene_element--fadeinright {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight; }
-  .m-scene .portfolio_element--portfoliofadeinright {
+  .main .portfolio_element--portfoliofadeinright {
     -webkit-animation-name: portfoliofadeInRight;
     animation-name: portfoliofadeInRight; }
-  .m-scene.is-exiting .scene_element {
+  .main.is-exiting .scene_element {
     animation-direction: alternate-reverse; }
 
 /**
@@ -92,15 +92,8 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #999;
-  background-size: cover; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    body {
-      background: url(../aaron-relph.png) top center no-repeat; } }
-  @media (min-width: 1024px) {
-    body {
-      background: url(../aaron-relph.png) top right no-repeat; } }
-  body.portfolio {
-    background: #fff; }
+  background-size: cover;
+  -webkit-font-smoothing: antialiased; }
 
 .container {
   height: 100%; }
@@ -244,6 +237,11 @@ pre {
     .icon > svg path:hover {
       fill: #fff; }
 
+.main {
+  background: url(../aaron-relph.png) top center no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
 /**
  * Sidebar
  */
@@ -286,7 +284,9 @@ pre {
   font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   text-align: center;
   padding-bottom: 30px;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+  position: relative; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .site-nav {
       float: right;
@@ -354,7 +354,8 @@ pre {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
 
 .portfolio-main-container {
-  height: 100vh; }
+  height: 100vh;
+  background: #fff; }
 
 .logo {
   width: 0;
@@ -369,29 +370,31 @@ pre {
   position: absolute;
   right: 60px;
   top: 145px;
-  animation-delay: 1.3s;
+  animation-delay: .8s;
   display: none; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .brand-logo {
-      position: absolute;
       right: 100px;
       top: 170px;
-      animation-delay: 1.3s;
       display: none; } }
   @media (min-width: 1024px) {
     .brand-logo {
       max-width: 270px;
-      position: absolute;
       right: 170px;
       top: 170px;
-      animation-delay: 1.3s;
       display: block; } }
   .brand-logo.gumroad {
     max-width: 400px;
-    top: 270px; }
+    top: 280px; }
   .brand-logo.fantex {
     max-width: 400px;
-    top: 270px; }
+    top: 300px; }
+  .brand-logo.airbear {
+    max-width: 300px;
+    top: 240px; }
+  .brand-logo.gifweather {
+    max-width: 300px;
+    top: 240px; }
 
 .sub-nav .features-nav {
   bottom: 0;

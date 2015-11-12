@@ -1,3 +1,9 @@
+.main {
+  background: url(../aaron-relph.png) top center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 /**
  * Sidebar
  */
@@ -56,6 +62,8 @@
   text-align: center;
   padding-bottom: 30px;
   border-bottom: 1px solid $grey-color-light;
+  z-index: 10;
+  position: relative;
 
   @include tablet {
     float: right;
@@ -153,6 +161,7 @@
 
 .portfolio-main-container {
   height: 100vh;
+  background: $white-color;
 }
 
 .logo {
@@ -169,28 +178,26 @@
   position: absolute;
   right: 60px;
   top: 145px;
-  animation-delay: 1.3s;
+  animation-delay: .8s;
   display: none;
 
   @include tablet {
-    position: absolute;
     right: 100px;
     top: 170px;
-    animation-delay: 1.3s;
     display: none;
   }
 
   @include desktop {
     max-width: 270px;
-    position: absolute;
     right: 170px;
     top: 170px;
-    animation-delay: 1.3s;
     display: block;
   }
 
-  &.gumroad { max-width: 400px; top: 270px; }
-  &.fantex { max-width: 400px; top: 270px; }
+  &.gumroad { max-width: 400px; top: 280px; }
+  &.fantex { max-width: 400px; top: 300px; }
+  &.airbear { max-width: 300px; top: 240px; }
+  &.gifweather { max-width: 300px; top: 240px; }
 }
 
 

@@ -1,26 +1,29 @@
 $(function(){
   'use strict';
-
-  content = $('#main').smoothState({
+  var options = {
     prefetch: true,
     cacheLength: 2,
     onStart: {
-    duration: 1500,
+      duration: 800, // Duration of our animation
       render: function ($container) {
+        // Add your CSS animation reversing class
         $container.addClass('is-exiting');
-        console.log('start');
+
+        // Restart your animation
+        smoothState.restartCSSAnimations();
       }
     },
     onReady: {
-    duration: 1500,
+      duration: 0,
       render: function ($container, $newContent) {
-        $container.html($newContent);
+        // Remove your CSS animation reversing class
         $container.removeClass('is-exiting');
-        console.log('ready');
+
+        // Inject the new content
+        $container.html($newContent);
+
       }
-    },
-    onAfter: function($container, $newContent) {
-      console.log('all done');
     }
-  }).data('smoothState');
+  },
+  smoothState = $('#main').smoothState(options).data('smoothState');
 });
