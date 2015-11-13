@@ -240,18 +240,16 @@ pre {
 .main {
   background: url(../aaron-relph.png) top center no-repeat;
   background-size: cover;
-  display: table;
   height: 100vh; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .main {
-      display: inherit;
-      height: 100vh; } }
+      background: url(../aaron-relph.png) top right no-repeat; } }
   @media (min-width: 1024px) {
     .main {
-      display: inherit;
-      height: 100vh; } }
+      background: url(../aaron-relph.png) top right no-repeat; } }
   .main .page-content {
-    background-color: rgba(255, 255, 255, 0.7); }
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 100vh; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .main .page-content {
         background-color: transparent; } }
@@ -625,10 +623,20 @@ pre {
   .footer-next-nav .arrow {
     cursor: pointer;
     position: absolute;
-    right: 100px;
-    width: 25px;
-    height: 25px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
     transform: rotate(180deg); }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .footer-next-nav .arrow {
+        right: 100px;
+        width: 25px;
+        height: 25px; } }
+    @media (min-width: 1024px) {
+      .footer-next-nav .arrow {
+        right: 100px;
+        width: 25px;
+        height: 25px; } }
     .footer-next-nav .arrow polyline {
       stroke: #999; }
 

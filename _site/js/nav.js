@@ -1,4 +1,5 @@
 $(document).ready(function() {
+if ($('.features-nav').length == 0) { return; }
 var stickyNavTop = $('.features-nav').offset().top;
 
 var stickyNav = function(){
