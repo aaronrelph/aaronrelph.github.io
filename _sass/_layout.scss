@@ -408,16 +408,18 @@
       }
     }
 
-    .img-max-width {
+    .img-max-width-small {
       width: 300px;
 
-      @include tablet {
-        width: 400px;
-      }
+      @include tablet { width: 400px; }
+      @include desktop { width: 400px; }
+    }
 
-      @include desktop {
-        width: 400px;
-      }
+    .img-max-width-big {
+      width: 300px;
+
+      @include tablet { width: 400px; }
+      @include desktop { width: 800px; }
     }
   }
 }

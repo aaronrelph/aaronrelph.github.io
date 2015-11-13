@@ -543,14 +543,22 @@ pre {
       @media (min-width: 1024px) {
         .feature-section .feature-main p {
           width: 60%; } }
-    .feature-section .feature-main .img-max-width {
+    .feature-section .feature-main .img-max-width-small {
       width: 300px; }
       @media (min-width: 768px) and (max-width: 1023px) {
-        .feature-section .feature-main .img-max-width {
+        .feature-section .feature-main .img-max-width-small {
           width: 400px; } }
       @media (min-width: 1024px) {
-        .feature-section .feature-main .img-max-width {
+        .feature-section .feature-main .img-max-width-small {
           width: 400px; } }
+    .feature-section .feature-main .img-max-width-big {
+      width: 300px; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .feature-section .feature-main .img-max-width-big {
+          width: 400px; } }
+      @media (min-width: 1024px) {
+        .feature-section .feature-main .img-max-width-big {
+          width: 800px; } }
 
 .clear {
   clear: both; }
