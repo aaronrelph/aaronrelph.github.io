@@ -1,14 +1,14 @@
 .main {
-  background: url(../aaron-relph.png) top center no-repeat;
+  background: url(../images/aaron-relph.png) top center no-repeat;
   background-size: cover;
   height: 100vh;
 
   @include tablet {
-    background: url(../aaron-relph.png) top right no-repeat;
+    background: url(../images/aaron-relph.png) top right no-repeat;
   }
 
   @include desktop {
-    background: url(../aaron-relph.png) top right no-repeat;
+    background: url(../images/aaron-relph.png) top right no-repeat;
   }
 
   .page-content {
