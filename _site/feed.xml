@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aaron Relph</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>I am a product designer in San Francisco, California. I design with usability and simplicity in mind. I&#39;m most interested in solving complex problems with unique solutions and building meaningful products that have a real impact on people’s lives.
 </description>
     <link>http://imgonnarelph.com/</link>
     <atom:link href="http://imgonnarelph.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Nov 2015 14:12:24 -0800</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2015 14:12:24 -0800</lastBuildDate>
-    <generator>Jekyll v2.5.2</generator>
+    <pubDate>Sun, 06 Dec 2015 12:32:01 -0800</pubDate>
+    <lastBuildDate>Sun, 06 Dec 2015 12:32:01 -0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
   </channel>
 </rss>

@@ -24,13 +24,6 @@
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
-@keyframes foldUp {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  100% {
-    -webkit-transform: none;
-    transform: none; } }
 @keyframes portfoliofadeInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -72,9 +65,6 @@
   .main .scene_element--fadeinright {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight; }
-  .main .scene_element--foldUp {
-    -webkit-animation-name: foldUp;
-    animation-name: foldUp; }
   .main .portfolio_element--portfoliofadeinright {
     -webkit-animation-name: portfoliofadeInRight;
     animation-name: portfoliofadeInRight; }
