@@ -87,13 +87,14 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 17px;
   line-height: 1.5;
   font-weight: 300;
-  color: #999;
-  background-size: cover;
-  -webkit-font-smoothing: antialiased; }
+  color: #e54c40;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  background-attachment: fixed; }
 
 .container {
   height: 100%; }
@@ -143,20 +144,20 @@ li > ol {
 h1, h2, h3, h4, h5, h6 {
   font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 500;
-  color: #454545; }
+  color: #333; }
 
 /**
  * Links
  */
 a {
-  color: #e54c40;
+  color: #333;
   text-decoration: none;
   transition: all .15s ease-in-out;
-  border-bottom: 1px solid #e54c40;
+  border-bottom: 1px solid #fff;
   padding-bottom: 3px; }
   a:hover {
-    color: #a82117;
-    border-bottom: 2px solid #a82117;
+    color: #cccccc;
+    border-bottom: 2px solid #cccccc;
     padding-bottom: 5px; }
     a:hover.twitter {
       border-bottom: 2px solid #55acee; }
@@ -238,18 +239,10 @@ pre {
       fill: #fff; }
 
 .main {
-  background: url(../images/aaron-relph.png) top center no-repeat;
-  background-size: cover;
-  height: 100vh; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .main {
-      background: url(../images/aaron-relph.png) top right no-repeat; } }
-  @media (min-width: 1024px) {
-    .main {
-      background: url(../images/aaron-relph.png) top right no-repeat; } }
+  width: 60%;
+  margin: 0 auto; }
   .main .page-content {
-    background-color: rgba(255, 255, 255, 0.8);
-    min-height: 100vh; }
+    background-color: rgba(255, 255, 255, 0.8); }
     @media (min-width: 768px) and (max-width: 1023px) {
       .main .page-content {
         background-color: transparent; } }
@@ -261,26 +254,44 @@ pre {
  * Sidebar
  */
 .home {
-  width: 80%;
-  padding: 80px 0 0 30px;
-  overflow: auto; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .home {
-      width: 40%;
-      padding: 140px 0 0 70px; } }
-  @media (min-width: 1024px) {
-    .home {
-      width: 30%;
-      padding: 150px 0 0 100px; } }
-  .home h1 {
-    margin-bottom: 40px; }
+  margin-top: 100px; }
   .home p {
-    margin-bottom: 20px; }
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 60px; }
   .home .date {
     display: inline;
     font-size: 14px;
     color: #999;
     margin-left: 15px; }
+  .home .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-weight: 700;
+    color: #ccc; }
+  .home .horizontal {
+    list-style: none;
+    margin: 0; }
+    .home .horizontal li {
+      float: left;
+      width: 33%; }
+    .home .horizontal p {
+      font-size: 18px; }
+  .home .vertical {
+    list-style: none;
+    margin: 0; }
+    .home .vertical .work {
+      padding: 20px 40px;
+      font-size: 30px;
+      font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
+      font-weight: 300;
+      border: 0;
+      margin-left: -40px;
+      display: block; }
+      .home .vertical .work:hover {
+        color: #fff;
+        background-color: #e54c40; }
 
 .portfolio-wrapper {
   width: 80%;
@@ -296,7 +307,6 @@ pre {
 
 .site-nav {
   margin: 0;
-  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   text-align: center;
   padding: 30px 0;
   border-bottom: 1px solid #ddd;
@@ -349,7 +359,6 @@ pre {
   font-size: 18px; }
 
 .project-wrapper {
-  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 15px 20px;
@@ -414,7 +423,6 @@ pre {
 
 .sub-nav .features-nav {
   bottom: 0;
-  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
   background: #e54c40;
   padding-left: 100px;
@@ -600,7 +608,6 @@ pre {
   display: block;
   padding: 60px;
   text-align: center;
-  font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 30px; }
   .footer-next-nav:hover {
     background: #e54c40;

@@ -1,0 +1,541 @@
+.main {
+  background: url(../images/aaron-relph.png) top center no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  @include tablet {
+    background: url(../images/aaron-relph.png) top right no-repeat;
+  }
+
+  @include desktop {
+    background: url(../images/aaron-relph.png) top right no-repeat;
+  }
+
+  .page-content {
+    background-color: rgba(255, 255, 255, .8);
+    min-height: 100vh;
+
+    @include tablet {
+      background-color: transparent;
+    }
+
+    @include desktop {
+      background-color: transparent;
+    }
+  }
+}
+
+/**
+ * Sidebar
+ */
+
+.home {
+  width: 80%;
+  padding: 80px 0 0 30px;
+  overflow: auto;
+
+  @include tablet {
+    width: 40%;
+    padding: 140px 0 0 70px;
+  }
+
+  @include desktop {
+    width: 30%;
+    padding: 150px 0 0 100px;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .date {
+    display: inline;
+    font-size: 14px;
+    color: #999;
+    margin-left: 15px;
+  }
+}
+
+.portfolio-wrapper {
+  width: 80%;
+  padding: 80px 0 0 30px;
+
+  @include tablet {
+    width: 80%;
+    padding: 140px 0 0 70px;
+  }
+
+  @include desktop {
+    width: 70%;
+    padding: 150px 0 0 100px;
+  }
+}
+
+// NAVIGATION
+
+.site-nav {
+  margin: 0;
+  font-family: $header-font-family;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 1px solid $grey-color-light;
+  z-index: 10;
+  position: relative;
+  background: #fff;
+
+  @include tablet {
+    float: right;
+    margin: 0 40px;
+    border-bottom: 0;
+    background: transparent;
+  }
+
+  @include desktop {
+    float: right;
+    margin: 0 40px;
+    border-bottom: 0;
+    background: transparent;
+  }
+
+  .page-link {
+    color: #666;
+    border-bottom: 0;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    &:not(:first-child) {
+        margin-left: 40px;
+    }
+  }
+}
+
+
+// PAGE CONTENT
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        border-bottom: 1px solid $grey-color-light;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        a {
+          padding: 20px 0;
+        }
+
+        h2 {
+          margin-bottom: 0;
+        }
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: lighten($grey-color, 20%);
+    float: right;
+    padding: 20px 0;
+}
+
+.post-link {
+    display: block;
+    font-size: 18px;
+}
+
+.project-wrapper {
+  font-family: $header-font-family;
+  border: 1px solid $grey-color-light;
+  border-radius: 4px;
+  padding: 15px 20px;
+  display: block;
+  margin-bottom: 20px;
+  color: #666;
+
+  &:hover {
+    border-color: #ccc;
+    background: $white-color;
+    color: $brand-color;
+    border: 1px solid $grey-color-light;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .05);
+    transform: translateY(-2px);
+    font-weight: 500;
+    padding: 15px 20px;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+  }
+}
+
+.portfolio-main-container {
+  height: 100vh;
+  background: $white-color;
+}
+
+.logo {
+  width: 0;
+  height: 0;
+  border-top: 1000px solid $grey-color-lighter;
+  border-left: 1000px solid transparent;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.brand-logo {
+  position: absolute;
+  right: 60px;
+  top: 145px;
+  animation-delay: .8s;
+  display: none;
+
+  @include tablet {
+    right: 100px;
+    top: 170px;
+    display: none;
+  }
+
+  @include desktop {
+    max-width: 270px;
+    right: 170px;
+    top: 170px;
+    display: block;
+  }
+
+  &.gumroad { max-width: 400px; top: 280px; }
+  &.fantex { max-width: 400px; top: 300px; }
+  &.airbear { max-width: 300px; top: 240px; }
+  &.gifweather { max-width: 300px; top: 240px; }
+}
+
+
+.sub-nav {
+
+  .features-nav {
+    bottom: 0;
+    font-family: $header-font-family;
+    font-size: 18px;
+    background: $brand-color;
+    padding-left: 100px;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+    color: rgba(255, 255, 255, .7);
+
+    @include tablet {
+      display: block;
+    }
+
+    @include desktop {
+      display: block;
+    }
+
+    &.sticky {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      bottom: auto;
+
+      button {
+      -webkit-appearance: none;
+      background: transparent;
+      border: 0;
+      outline:0;
+      }
+
+      svg {
+        padding: 5px;
+      }
+
+      .arrow {
+        opacity: 1;
+
+        &:hover polyline {
+          stroke-width: 8;
+          transition: all 250ms ease-in-out;
+          stroke: $white-color;
+        }
+
+        &:active polyline {
+          stroke-width: 12;
+          transition: all 100ms ease-in-out;
+          stroke: $white-color;
+        }
+      }
+    }
+
+    a {
+      color: #fff;
+      border-bottom: 0;
+      transition: all .2s ease-in-out;
+      display: block;
+
+      &:hover {
+        color: rgba(255, 255, 255, .7);
+      }
+    }
+
+    .back-to-top {
+      float: right;
+    }
+
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-top: -45px;
+      margin-left: -145px;
+      width: 70px;
+      height: 90px;
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0px;
+    line-height: inherit;
+    height: 80px;
+    line-height: 80px;
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      height: 80px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.browser-wrapper {
+  background: #fff;
+  border: 1px solid $grey-color-light;
+  border-radius: 4px;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, .15);;
+
+  .bar {
+    border-bottom: 1px solid $grey-color-light;
+    padding: 0 8px;
+    text-align: left;
+
+    @include tablet {
+      padding: 8px 18px;
+    }
+
+    @include desktop {
+      padding: 8px 18px;
+    }
+
+    .circle {
+      border-radius: 50%;
+      background: $grey-color-light;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+    }
+  }
+}
+
+
+.feature-section {
+  padding: 120px 0px 0px;
+
+  .feature-main-content {
+    margin: 0px 30px 30px 30px;
+
+    @include tablet {
+      width: 60%;
+      margin: 0px auto 30px;
+    }
+
+    @include desktop {
+      width: 50%;
+      margin: 0px auto 30px;
+    }
+  }
+
+  .feature-main {
+    padding: 10px;
+    text-align: center;
+
+    @include tablet {
+      padding: 20px 50px 80px;
+    }
+
+    @include desktop {
+      padding: 30px 100px 100px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    p {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+
+      @include tablet {
+        width: 70%;
+      }
+
+      @include desktop {
+        width: 60%;
+      }
+    }
+
+    .img-max-width-small {
+      width: 300px;
+
+      @include tablet { width: 400px; }
+      @include desktop { width: 400px; }
+    }
+
+    .img-max-width-big {
+      width: 300px;
+
+      @include tablet { width: 400px; }
+      @include desktop { width: 800px; }
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+// POSTS
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: 28px;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include tablet {
+      font-size: 36px;
+  }
+
+  @include desktop {
+      font-size: 36px;
+  }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-desktop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-desktop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-desktop) {
+            font-size: 18px;
+        }
+    }
+}
+
+// FOOTER
+.footer-next-nav {
+  background: $grey-color-lighter;
+  border-top: 1px solid $grey-color-light;
+  border-bottom: 0;
+  display: block;
+  padding: 60px;
+  text-align: center;
+  font-family: $header-font-family;
+  font-size: 30px;
+
+
+  &:hover {
+    background: $brand-color;
+    color: $white-color;
+    padding: 60px;
+
+    .arrow {
+
+      & polyline {
+        stroke-width: 8;
+        transition: all 250ms ease-in-out;
+        stroke: $white-color;
+      }
+
+      &:active polyline {
+        stroke-width: 12;
+        transition: all 100ms ease-in-out;
+        stroke: $white-color;
+      }
+    }
+  }
+
+  .up-next {
+    color: rgba(0, 0, 0, .4);
+    left: 0;
+    font-size: 12px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+
+    @include tablet {
+      right: 100px;
+      width: 25px;
+      height: 25px;
+    }
+
+    @include desktop {
+      right: 100px;
+      width: 25px;
+      height: 25px;
+    }
+
+    & polyline {
+      stroke: $grey-color;
+    }
+  }
+}

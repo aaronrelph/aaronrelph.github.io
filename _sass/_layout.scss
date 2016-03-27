@@ -1,19 +1,17 @@
 .main {
-  background: url(../images/aaron-relph.png) top center no-repeat;
-  background-size: cover;
-  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
 
-  @include tablet {
-    background: url(../images/aaron-relph.png) top right no-repeat;
-  }
-
-  @include desktop {
-    background: url(../images/aaron-relph.png) top right no-repeat;
-  }
+  // @include tablet {
+  //   background: url(../images/aaron-relph.png) top right no-repeat;
+  // }
+  //
+  // @include desktop {
+  //   background: url(../images/aaron-relph.png) top right no-repeat;
+  // }
 
   .page-content {
-    background-color: rgba(255, 255, 255, .8%);
-    min-height: 100vh;
+    background-color: rgba(255, 255, 255, .8);
 
     @include tablet {
       background-color: transparent;
@@ -30,26 +28,12 @@
  */
 
 .home {
-  width: 80%;
-  padding: 80px 0 0 30px;
-  overflow: auto;
-
-  @include tablet {
-    width: 40%;
-    padding: 140px 0 0 70px;
-  }
-
-  @include desktop {
-    width: 30%;
-    padding: 150px 0 0 100px;
-  }
-
-  h1 {
-    margin-bottom: 40px;
-  }
+  margin-top: 100px;
 
   p {
-    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 60px;
   }
 
   .date {
@@ -57,6 +41,48 @@
     font-size: 14px;
     color: #999;
     margin-left: 15px;
+  }
+
+  .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-weight: 700;
+    color: #ccc;
+  }
+
+  .horizontal {
+    list-style: none;
+    margin: 0;
+
+    li {
+      float: left;
+      width: 33%;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .vertical {
+    list-style: none;
+    margin: 0;
+
+    .work {
+      padding: 20px 40px;
+      font-size: 30px;
+      font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
+      font-weight: 300;
+      border: 0;
+      margin-left: -40px;
+      display: block;
+
+      &:hover {
+        color: $white-color;
+        background-color: $brand-color;
+      }
+    }
   }
 }
 
@@ -79,7 +105,6 @@
 
 .site-nav {
   margin: 0;
-  font-family: $header-font-family;
   text-align: center;
   padding: 30px 0;
   border-bottom: 1px solid $grey-color-light;
@@ -156,7 +181,6 @@
 }
 
 .project-wrapper {
-  font-family: $header-font-family;
   border: 1px solid $grey-color-light;
   border-radius: 4px;
   padding: 15px 20px;
@@ -227,7 +251,6 @@
 
   .features-nav {
     bottom: 0;
-    font-family: $header-font-family;
     font-size: 18px;
     background: $brand-color;
     padding-left: 100px;
@@ -289,7 +312,7 @@
       display: block;
 
       &:hover {
-        color: rgba(255, 255, 255, .7%);
+        color: rgba(255, 255, 255, .7);
       }
     }
 
@@ -481,7 +504,6 @@
   display: block;
   padding: 60px;
   text-align: center;
-  font-family: $header-font-family;
   font-size: 30px;
 
 

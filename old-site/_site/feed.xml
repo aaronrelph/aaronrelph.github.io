@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aaron Relph</title>
+    <description>I am a product designer in San Francisco, California. I design with usability and simplicity in mind. I&#39;m most interested in solving complex problems with unique solutions and building meaningful products that have a real impact on people’s lives.
+</description>
+    <link>http://imgonnarelph.com/</link>
+    <atom:link href="http://imgonnarelph.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 06 Feb 2016 09:57:05 -0800</pubDate>
+    <lastBuildDate>Sat, 06 Feb 2016 09:57:05 -0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+  </channel>
+</rss>
