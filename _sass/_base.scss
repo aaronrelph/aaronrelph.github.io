@@ -21,9 +21,11 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: 300;
-  color: $text-color;
-  background-size: cover;
+  color: $brand-color;
+  // background: $brand-color;
   -webkit-font-smoothing: antialiased;
+  background: $white-color;
+  background-attachment: fixed;
   //
   // @include tablet {
   //   background: url(../aaron-relph.png) top center no-repeat;
@@ -32,7 +34,7 @@ body {
   // @include desktop {
   //   background: url(../aaron-relph.png) top right no-repeat;
   // }
-  // 
+  //
   // &.portfolio {
   //   background: #fff;
   // }
@@ -103,7 +105,7 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
     font-weight: 500;
-    color: $header-color;
+    color: #333;
 }
 
 
@@ -112,15 +114,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: #333;
     text-decoration: none;
     transition: all .15s ease-in-out;
-    border-bottom: 1px solid $brand-color;
+    border-bottom: 1px solid $white-color;
     padding-bottom: 3px;
 
     &:hover {
-        color: darken( $brand-color, 20% );
-        border-bottom: 2px solid darken($brand-color, 20%);;
+        color: darken( $white-color, 20% );
+        border-bottom: 2px solid darken($white-color, 20%);;
         padding-bottom: 5px;
 
         &.twitter { border-bottom: 2px solid $twitter-brand-color; }
