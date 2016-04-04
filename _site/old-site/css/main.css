@@ -239,8 +239,8 @@ pre {
       fill: #fff; }
 
 .main {
-  width: 60%;
-  margin: 0 auto; }
+  width: 50%;
+  margin: 100px auto; }
   .main .page-content {
     background-color: rgba(255, 255, 255, 0.8); }
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -253,45 +253,46 @@ pre {
 /**
  * Sidebar
  */
-.home {
-  margin-top: 100px; }
-  .home p {
-    font-size: 40px;
-    line-height: 60px;
-    margin-bottom: 60px; }
-  .home .date {
-    display: inline;
-    font-size: 14px;
-    color: #999;
-    margin-left: 15px; }
-  .home .title {
-    font-size: 14px;
-    text-transform: uppercase;
-    line-height: 70px;
-    font-weight: 700;
-    color: #ccc; }
-  .home .horizontal {
-    list-style: none;
-    margin: 0; }
-    .home .horizontal li {
-      float: left;
-      width: 33%; }
-    .home .horizontal p {
-      font-size: 18px; }
-  .home .vertical {
-    list-style: none;
-    margin: 0; }
-    .home .vertical .work {
-      padding: 20px 40px;
-      font-size: 30px;
-      font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
-      font-weight: 300;
-      border: 0;
-      margin-left: -40px;
-      display: block; }
-      .home .vertical .work:hover {
-        color: #fff;
-        background-color: #e54c40; }
+.home h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #e54c40;
+  margin: 40px 0; }
+.home h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ccc;
+  margin: 0; }
+.home p {
+  color: #999; }
+.home .date {
+  display: inline;
+  font-size: 14px;
+  color: #999;
+  margin-left: 15px; }
+.home .horizontal {
+  list-style: none;
+  margin: 0; }
+  .home .horizontal li {
+    float: left;
+    width: 33%; }
+  .home .horizontal p {
+    font-size: 18px; }
+.home .vertical {
+  list-style: none;
+  margin: 0; }
+  .home .vertical .work {
+    padding: 20px 40px;
+    font-size: 30px;
+    font-family: "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: 300;
+    border: 0;
+    margin-left: -40px;
+    display: block; }
+    .home .vertical .work:hover {
+      color: #fff;
+      background-color: #e54c40; }
 
 .portfolio-wrapper {
   width: 80%;
