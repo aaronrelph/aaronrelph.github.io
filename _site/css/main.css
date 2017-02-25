@@ -270,6 +270,14 @@ pre {
   font-weight: 400;
   color: #999; }
 
+.prose.prose-large {
+  font-size: 38px; }
+.prose.prose-medium {
+  font-size: 28px; }
+.prose.prose-small {
+  font-size: 18px;
+  color: #595959; }
+
 .post-list {
   margin-left: 0;
   list-style: none; }

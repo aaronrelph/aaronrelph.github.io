@@ -176,6 +176,13 @@
     color: $grey-color;
 }
 
+.prose {
+
+  &.prose-large {font-size: 38px;}
+  &.prose-medium {font-size: 28px;}
+  &.prose-small {font-size: 18px; color: $grey-color-dark}
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
