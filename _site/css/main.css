@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.5 "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -164,7 +164,6 @@ pre {
     color: #424242; }
 
 .site-nav {
-  float: right;
   line-height: 56px; }
   .site-nav .menu-icon {
     display: none; }
@@ -173,6 +172,8 @@ pre {
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
+    .site-nav .page-link.active {
+      font-weight: bold; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
