@@ -2,11 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
+    min-height: 80px;
     position: relative;
 }
 
@@ -25,7 +21,7 @@
 }
 
 .site-nav {
-    line-height: 56px;
+    line-height: 80px;
 
     .menu-icon {
         display: none;
@@ -175,7 +171,9 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 21px;
+    font-weight: 400;
+    color: $grey-color;
 }
 
 .post-list {
