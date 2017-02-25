@@ -4,70 +4,49 @@
 @charset "utf-8";
 
 
-// Variables
-$base-font-family:        "SF UI Text", "Helvetica Neue", "Helvetica", sans-serif;
-$base-font-size:          17px;
-$small-font-size:         $base-font-size * 0.875;
-$base-line-height:        1.5;
 
-$spacing-unit:            30px;
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
 
-$header-color:            #454545;
-$text-color:              #999;
-$background-color:        #e1e1e1;
+$spacing-unit:     30px;
 
-$white-color:             #fff;
-$grey-color:              #999;
-$grey-color-light:        #ddd;
-$grey-color-lighter:      #eee;
-$grey-color-lightest:     #f5f5f5;
-$grey-color-dark:         darken($grey-color, 25%);
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
 
-// Brand colors
-$brand-color:             #e54c40;
-
-$twitter-brand-color:     #55acee;
-$dribbble-brand-color:    #ea4c89;
-$instagram-brand-color:   #3f729b;
-$github-brand-color:      #333;
-
-
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:     800px;
-$on-mobile:         640px;
-$on-tablet:         768px;
-$on-desktop:        1024px;
+$content-width:    800px;
 
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
-@mixin mobile {
-    @media screen and (max-width: $on-tablet - 1px) {
-        @content;
-    }
-}
-
-@mixin tablet {
-  @media (min-width: #{$on-tablet}) and (max-width: #{$on-desktop - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$on-desktop}) {
-    @content;
-  }
-}
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "animations",
         "base",
         "layout",
         "syntax-highlighting"
