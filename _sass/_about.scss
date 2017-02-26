@@ -1,0 +1,11 @@
+.about {
+  display: flex;
+
+  .content {
+    flex: auto;
+  }
+
+  .hero {
+    background: $brand-color;
+  }
+}

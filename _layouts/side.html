@@ -5,10 +5,16 @@
 
   <body>
 
-    {% include header.html %}
+    <div class="container d-flex">
 
-    <div class="container">
+      {% include header.html %}
+
       {{ content }}
+
+      <div class="hero">
+        Test
+      </div>
+
     </div>
 
     {% include footer.html %}
