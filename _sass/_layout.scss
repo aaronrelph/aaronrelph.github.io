@@ -98,7 +98,54 @@
  * Page content
  */
 .container {
-    padding: $spacing-unit 0;
+  height: 100%;
+
+  .content, .sidebar {
+    width: 50%;
+  }
+
+  .sidebar {
+
+    .wave {
+      background-repeat: repeat-y;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width:177px;
+      height: 4592px;
+      animation: wave 10s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+
+      &.one {
+        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
+        margin-right: 50px;
+      }
+
+      &.two {
+        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
+        margin-right: 0px;
+      }
+    }
+
+    @keyframes wave {
+      0% {
+        margin-top: 0;
+      }
+      100% {
+        margin-top: -2296px;
+      }
+    }
+
+    @-webkit-keyframes wave {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: -2296px;
+      }
+    }
+  }
 }
 
 .page-heading {

@@ -19,7 +19,8 @@ body {
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; }
+  font-kerning: normal;
+  height: 100VH; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -144,6 +145,9 @@ pre {
   .icon > svg path {
     fill: #999; }
 
+.d-flex {
+  display: flex; }
+
 /**
  * Site header
  */
@@ -214,8 +218,35 @@ pre {
  * Page content
  */
 .container {
-  padding: 50px 0; }
-
+  height: 100%; }
+  .container .content, .container .sidebar {
+    width: 50%; }
+  .container .sidebar .wave {
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 177px;
+    height: 4592px;
+    animation: wave 10s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+    .container .sidebar .wave.one {
+      background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
+      margin-right: 50px; }
+    .container .sidebar .wave.two {
+      background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
+      margin-right: 0px; }
+@keyframes wave {
+  0% {
+    margin-top: 0; }
+  100% {
+    margin-top: -2296px; } }
+@-webkit-keyframes wave {
+  0% {
+    top: 0; }
+  100% {
+    top: -2296px; } }
 .page-heading {
   font-size: 21px;
   font-weight: 400;
