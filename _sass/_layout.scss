@@ -23,7 +23,6 @@
 .site-nav {
     line-height: 80px;
     width: 80%;
-    margin: 0 auto;
     font-size: 14px;
 
     .menu-icon {
@@ -100,11 +99,18 @@
 .container {
   height: 100%;
 
-  .content, .sidebar {
-    width: 50%;
+  .content {
+    // width: 50%;
+    padding: 20px 80px;
   }
 
   .sidebar {
+    width: 390px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    z-index: -10;
+    height: 100%;
 
     .wave {
       background-repeat: repeat-y;
@@ -113,17 +119,22 @@
       right: 0px;
       width:177px;
       height: 4592px;
-      animation: wave 10s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;
+      animation: wave 40s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
 
       &.one {
         background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
-        margin-right: 50px;
+        margin-right: 100px;
       }
 
       &.two {
-        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
+        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical-two.png);
+        margin-right: 50px;
+      }
+
+      &.three {
+        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical-three.png);
         margin-right: 0px;
       }
     }
@@ -152,6 +163,7 @@
     font-size: 21px;
     font-weight: 400;
     color: $grey-color;
+    margin: 50px 0;
 }
 
 .prose {

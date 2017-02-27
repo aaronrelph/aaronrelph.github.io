@@ -1,11 +1,14 @@
 .about {
-  display: flex;
 
-  .content {
-    flex: auto;
+  .words {
+    flex: 1 1 auto;
   }
-
-  .hero {
-    background: $brand-color;
+  
+  .portrait {
+    background: #FFFFFF;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+    border-radius: 10px;
+    width: 520px;
+    height: 670px;
   }
 }

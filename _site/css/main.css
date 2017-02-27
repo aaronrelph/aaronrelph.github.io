@@ -168,7 +168,6 @@ pre {
 .site-nav {
   line-height: 80px;
   width: 80%;
-  margin: 0 auto;
   font-size: 14px; }
   .site-nav .menu-icon {
     display: none; }
@@ -219,24 +218,34 @@ pre {
  */
 .container {
   height: 100%; }
-  .container .content, .container .sidebar {
-    width: 50%; }
-  .container .sidebar .wave {
-    background-repeat: repeat-y;
+  .container .content {
+    padding: 20px 80px; }
+  .container .sidebar {
+    width: 390px;
+    overflow: hidden;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 177px;
-    height: 4592px;
-    animation: wave 10s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-    .container .sidebar .wave.one {
-      background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
-      margin-right: 50px; }
-    .container .sidebar .wave.two {
-      background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
-      margin-right: 0px; }
+    right: 0;
+    z-index: -10;
+    height: 100%; }
+    .container .sidebar .wave {
+      background-repeat: repeat-y;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 177px;
+      height: 4592px;
+      animation: wave 40s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+      .container .sidebar .wave.one {
+        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
+        margin-right: 100px; }
+      .container .sidebar .wave.two {
+        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical-two.png);
+        margin-right: 50px; }
+      .container .sidebar .wave.three {
+        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical-three.png);
+        margin-right: 0px; }
 @keyframes wave {
   0% {
     margin-top: 0; }
@@ -250,7 +259,8 @@ pre {
 .page-heading {
   font-size: 21px;
   font-weight: 400;
-  color: #999; }
+  color: #999;
+  margin: 50px 0; }
 
 .prose.prose-large {
   font-size: 38px; }
@@ -306,12 +316,14 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
-.about {
-  display: flex; }
-  .about .content {
-    flex: auto; }
-  .about .hero {
-    background: #E54C40; }
+.about .words {
+  flex: 1 1 auto; }
+.about .portrait {
+  background: #FFFFFF;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 520px;
+  height: 670px; }
 
 /**
  * Syntax highlighting styles
