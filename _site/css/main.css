@@ -148,23 +148,27 @@ pre {
 .d-flex {
   display: flex; }
 
+.container {
+  width: 85%;
+  margin: 0px auto;
+  padding: 100px 0;
+  box-sizing: border-box; }
+  .container .item {
+    width: 50%;
+    padding: 50px; }
+
+.angel {
+  background: #E54C40;
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  z-index: -1; }
+
 /**
  * Site header
  */
-.site-header {
-  min-height: 80px;
-  position: relative; }
-
-.site-title {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 56px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left; }
-  .site-title, .site-title:visited {
-    color: #595959; }
-
 .site-nav {
   line-height: 80px;
   width: 80%;
@@ -216,46 +220,6 @@ pre {
 /**
  * Page content
  */
-.container {
-  height: 100%; }
-  .container .content {
-    padding: 20px 80px; }
-  .container .sidebar {
-    width: 390px;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    z-index: -10;
-    height: 100%; }
-    .container .sidebar .wave {
-      background-repeat: repeat-y;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      width: 177px;
-      height: 4592px;
-      animation: wave 40s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
-      .container .sidebar .wave.one {
-        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical.png);
-        margin-right: 100px; }
-      .container .sidebar .wave.two {
-        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical-two.png);
-        margin-right: 50px; }
-      .container .sidebar .wave.three {
-        background: url(https://raw.githubusercontent.com/imgonnarelph/imgonnarelph/master/wave-vertical-three.png);
-        margin-right: 0px; }
-@keyframes wave {
-  0% {
-    margin-top: 0; }
-  100% {
-    margin-top: -2296px; } }
-@-webkit-keyframes wave {
-  0% {
-    top: 0; }
-  100% {
-    top: -2296px; } }
 .page-heading {
   font-size: 21px;
   font-weight: 400;
@@ -263,67 +227,18 @@ pre {
   margin: 50px 0; }
 
 .prose.prose-large {
-  font-size: 38px; }
-.prose.prose-medium {
   font-size: 28px; }
+.prose.prose-medium {
+  font-size: 21px; }
 .prose.prose-small {
-  font-size: 18px;
+  font-size: 14px;
   color: #595959; }
 
-.post-list {
-  margin-left: 0;
-  list-style: none; }
-  .post-list > li {
-    margin-bottom: 50px; }
-
-.post-meta {
-  font-size: 14px;
-  color: #999; }
-
-.post-link {
-  display: block;
-  font-size: 24px; }
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 50px; }
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
-
-.post-content {
-  margin-bottom: 50px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
-
-.about .words {
-  flex: 1 1 auto; }
-.about .portrait {
+.portrait {
   background: #FFFFFF;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  width: 520px;
-  height: 670px; }
+  height: 600px; }
 
 /**
  * Syntax highlighting styles
