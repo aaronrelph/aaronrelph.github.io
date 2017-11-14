@@ -4,11 +4,11 @@
     <title>Aaron Relph, Product Designer.</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://imgonnarelph.com/</link>
-    <atom:link href="http://imgonnarelph.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jun 2017 14:44:51 -0700</pubDate>
-    <lastBuildDate>Sun, 25 Jun 2017 14:44:51 -0700</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 04 Nov 2017 14:16:12 -0700</pubDate>
+    <lastBuildDate>Sat, 04 Nov 2017 14:16:12 -0700</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
   </channel>
 </rss>
