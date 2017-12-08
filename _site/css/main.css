@@ -20,7 +20,8 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  height: 100VH; }
+  height: 100VH;
+  background: #111; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -158,7 +159,7 @@ pre {
     padding: 50px; }
 
 .angel {
-  background: #E54C40;
+  background: #fff;
   width: 600px;
   height: 100%;
   position: absolute;
@@ -237,7 +238,6 @@ pre {
 .portrait {
   background: #FFFFFF;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
   height: 600px; }
 
 /**
