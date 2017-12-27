@@ -1,118 +1,59 @@
 .container {
-  width: 85%;
-  margin: 0px auto;
-  padding: 100px 0;
-  box-sizing: border-box;
+  height: 100%;
+  overflow: scroll;
+}
 
-  .item {
-    width: 50%;
-    padding: 50px;
-  }
-
-
+.content {
+  position: relative;
+  overflow: scroll;
+  width: 55%;
+  margin: 0 auto 100px;
+  padding-top: 100px;
+  padding-right: 200px;
 }
 
 .angel {
-  background: #E54C40;
-  width: 600px;
+  background: #fff;
+  width: 60%;
   height: 100%;
   position: absolute;
   right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
-  z-index: -1;
-}
-
-/**
- * Site header
- */
-
-
-.site-nav {
-    line-height: 80px;
-    width: 80%;
-    font-size: 14px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 50px;
-        }
-
-        &.active {
-          font-weight: bold;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+  // z-index: -1;
 }
 
 /**
  * Page content
  */
 
-.page-heading {
-    font-size: 21px;
+.portfolio-intro {
+  font-family: "Scope One", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 18px;
+  color: #999;
+}
+
+.portfolio-lead {
+    font-size: 28px;
     font-weight: 400;
-    color: $grey-color;
-    margin: 50px 0;
+    color: #444;
 }
 
 .prose {
-  &.prose-large {font-size: 28px;}
-  &.prose-medium {font-size: 21px;}
-  &.prose-small {font-size: 14px; color: $grey-color-dark}
+  font-size: 18px;
+  color: #999;
+  line-height: 30px;
 }
+
+.twitter {color: #1da1f2; &:visited {color:#1da1f2}; &:hover {color:darken(#1da1f2, 10%)}}
+.dribbble {color: #ea4c89; &:visited {color: #ea4c89}; &:hover {color:darken(#ea4c89, 10%)}}
+.instagram {color: #405de6; &:visited {color: #405de6}; &:hover {color:darken(#405de6, 10%)}}
+.github {color: #333; &:visited {color: #333}; &:hover {color:darken(#333, 10%)}}
+
+
+/**
+ * Utility classes
+ */
+
+ .d-flex {
+   display: flex;
+ }
