@@ -14,8 +14,8 @@ html, body {
   height: 100%; }
 
 body {
-  font: 400 16px/1.5 "Helvetica Neue", "Helvetica", sans-serif;
-  color: #fff;
+  font: 400 16px/1.5 "Work Sans", sans-serif, Helvetica Neue, Helvetica;
+  color: #111;
   background-color: #FFFFFF;
   background-image: linear-gradient(180deg, #fff 0%, #eee 100%);
   text-rendering: optimizeLegibility;
@@ -135,15 +135,6 @@ a {
       padding: 100px 40px;
       margin: 0;
       box-sizing: border-box; } }
-
-.angel {
-  background: #fff;
-  width: 60%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%); }
 
 /**
  * Page content

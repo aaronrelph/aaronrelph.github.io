@@ -24,18 +24,6 @@
     margin: 0;
     box-sizing: border-box;
   }
-
-
-}
-
-.angel {
-  background: #fff;
-  width: 60%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
 }
 
 /**
@@ -66,12 +54,6 @@
     font-size: 16px;
   }
 }
-
-// .twitter {color: #1da1f2; &:visited {color:#1da1f2}; &:hover {color:darken(#1da1f2, 10%)}}
-// .dribbble {color: #ea4c89; &:visited {color: #ea4c89}; &:hover {color:darken(#ea4c89, 10%)}}
-// .instagram {color: #405de6; &:visited {color: #405de6}; &:hover {color:darken(#405de6, 10%)}}
-// .github {color: #333; &:visited {color: #333}; &:hover {color:darken(#333, 10%)}}
-
 
 /**
  * Utility classes
