@@ -33,6 +33,10 @@
   font-family: "Space mono", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
   color: $brand-color;
+
+  @include media-query($on-palm) {
+    font-size: 16px;
+  }
 }
 
 .prose-lead {
@@ -40,7 +44,7 @@
     font-weight: 400;
 
     @include media-query($on-palm) {
-      font-size: 22px;
+      font-size: 24px;
     }
 }
 
@@ -54,6 +58,7 @@
     float: none;
     margin-left: 0;
     margin-bottom: 20px;
+    font-size: 28px;
   }
 }
 

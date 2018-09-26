@@ -129,13 +129,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Space mono", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
   color: #E54C40; }
+  @media screen and (max-width: 600px) {
+    .portfolio-intro {
+      font-size: 16px; } }
 
 .prose-lead {
   font-size: 32px;
   font-weight: 400; }
   @media screen and (max-width: 600px) {
     .prose-lead {
-      font-size: 22px; } }
+      font-size: 24px; } }
 
 .hi {
   float: left;
@@ -146,7 +149,8 @@ h1, h2, h3, h4, h5, h6 {
     .hi {
       float: none;
       margin-left: 0;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      font-size: 28px; } }
 
 .prose {
   font-size: 18px;
