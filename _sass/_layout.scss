@@ -5,9 +5,8 @@
 
 .content {
   position: relative;
-  overflow: scroll;
   width: 55%;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   padding-top: 100px;
   padding-right: 200px;
 
@@ -31,18 +30,31 @@
  */
 
 .portfolio-intro {
-  font-family: "Scope One", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Space mono", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
-  color: #999;
+  color: $brand-color;
 }
 
-.portfolio-lead {
-    font-size: 28px;
-    color: #444;
+.prose-lead {
+    font-size: 32px;
+    font-weight: 400;
 
     @include media-query($on-palm) {
       font-size: 22px;
     }
+}
+
+.hi {
+  float: left;
+  margin-left: -60px;
+  font-size: 32px;
+  margin-top: 4px;
+
+  @include media-query($on-palm) {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .prose {
@@ -62,3 +74,23 @@
  .d-flex {
    display: flex;
  }
+
+
+/**
+ * Links
+ */
+
+ a {
+  color: $brand-color;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+
+  &:visited {
+      color: $brand-color;
+  }
+
+  &:hover {
+      color: $brand-color;
+      text-decoration: underline;
+  }
+}

@@ -64,19 +64,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 /**
- * Links
- */
-a {
-  color: #444;
-  transition: all .2s ease-in-out; }
-  a:visited {
-    color: #333; }
-  a:hover {
-    color: #E54C40;
-    text-decoration: none;
-    border-bottom: 3px solid #E54C40; }
-
-/**
  * Wrapper
  */
 .wrapper {
@@ -118,9 +105,8 @@ a {
 
 .content {
   position: relative;
-  overflow: scroll;
   width: 55%;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   padding-top: 100px;
   padding-right: 200px; }
   @media screen and (max-width: 800px) {
@@ -140,16 +126,27 @@ a {
  * Page content
  */
 .portfolio-intro {
-  font-family: "Scope One", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Space mono", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
-  color: #999; }
+  color: #E54C40; }
 
-.portfolio-lead {
-  font-size: 28px;
-  color: #444; }
+.prose-lead {
+  font-size: 32px;
+  font-weight: 400; }
   @media screen and (max-width: 600px) {
-    .portfolio-lead {
+    .prose-lead {
       font-size: 22px; } }
+
+.hi {
+  float: left;
+  margin-left: -60px;
+  font-size: 32px;
+  margin-top: 4px; }
+  @media screen and (max-width: 600px) {
+    .hi {
+      float: none;
+      margin-left: 0;
+      margin-bottom: 20px; } }
 
 .prose {
   font-size: 18px;
@@ -164,6 +161,19 @@ a {
  */
 .d-flex {
   display: flex; }
+
+/**
+ * Links
+ */
+a {
+  color: #E54C40;
+  text-decoration: none;
+  transition: all .1s ease-in-out; }
+  a:visited {
+    color: #E54C40; }
+  a:hover {
+    color: #E54C40;
+    text-decoration: underline; }
 
 /**
  * Syntax highlighting styles
