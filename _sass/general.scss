@@ -1,7 +1,38 @@
 body {
   background: #000;
   color: #fff;
-  font-family: "Cabin", sans-serif;
-  padding: 100px;
-  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  padding: 30px;
+  font-size: 24px;
+}
+
+a {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 60%;
+  margin: 100px auto 0;
+}
+
+.intro {
+  font-weight: 500;
+  font-size: 62px;
+  margin: 0;
+}
+
+.about {
+  margin: 40px 0;
+}
+
+.contact {
+  font-size: 18px;
 }
