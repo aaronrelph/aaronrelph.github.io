@@ -1,8 +1,88 @@
 @import url('https://rsms.me/inter/inter.css');
 
 html, body {
-  background: red;
+  background: #fff;
+  color: #000;
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  letter-spacing: -0.004em;
+  scroll-behavior: smooth;
+  font-kerning: normal;
+  font-variant-ligatures: contextual common-ligatures;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  font-size: 16px;
   margin: 0;
+  font-weight: 300;
+}
+
+.content-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 50px 0;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  &.sticky + .about-me{
+    margin-top: 151px;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  .right {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .nav-item {
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.p-large {
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+}
+
+.divider {
+  margin: 150px 0;
+
+  h4 {
+    font-weight: 500;
+  }
+}
+
+
+.process {
+  height: 100px;
+  width: 200px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, blue 50%, transparent 50%), linear-gradient(90deg, blue 50%, transparent 50%), linear-gradient(0deg, blue 50%, transparent 50%), linear-gradient(0deg, blue 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+  background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+  padding: 10px;
+  animation: border-dance 6s infinite linear;
+}
+
+@keyframes border-dance {
+  0% {
+    background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+  }
+  100% {
+    background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+  }
 }
