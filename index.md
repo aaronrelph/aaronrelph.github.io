@@ -7,18 +7,15 @@ layout: default
 
 <div class="header" id="myHeader">
   <div class="content-wrapper">
-    <nav class="navigation">
-      <div class="left">
-        <h1>{{ site.name }}</h1>
-      </div>
+    <div class="navigation">
+      <h1 class="name">{{ site.name }}</h1>
       <div class="right">
         <a href="" class="nav-item">About</a>
         <a href="" class="nav-item">Work</a>
         <a href="" class="nav-item">Say Hi</a>
       </div>
-    </nav>  
-          <h4>{{ site.role }}</h4>
-
+    </div>  
+    <h4 class="title">{{ site.role }}</h4>
   </div>  
 </div>
 
@@ -37,7 +34,30 @@ layout: default
   </div>
 </div>
 
-<div class="process">Test</div>
+<div class="process">
+  <div class="breakdown">
+    <div class="item define">
+      <h4>Define</h4>
+      <span class="circle"></span>
+      <p>Curently, I’m designing at Sisu helping build an analytics tool that answers why. Before that I spent the past 4 years I've been building developer tools at GitHub where I led design for the GitHub Enterprise products.</p>
+    </div>
+    <div class="item design">
+      <h4>Design</h4>
+      <span class="circle"></span>
+      <p>Curently, I’m designing at Sisu helping build an analytics tool that answers why. Before that I spent the past 4 years I've been building developer tools at GitHub where I led design for the GitHub Enterprise products.</p>
+    </div>
+    <div class="item deliver">
+      <h4>Deliver</h4>
+      <span class="circle"></span>
+      <p>Curently, I’m designing at Sisu helping build an analytics tool that answers why. Before that I spent the past 4 years I've been building developer tools at GitHub where I led design for the GitHub Enterprise products.</p>
+    </div>
+    <div class="item iterate">
+      <h4>Iterate</h4>
+      <span class="circle"></span>
+      <p>Curently, I’m designing at Sisu helping build an analytics tool that answers why. Before that I spent the past 4 years I've been building developer tools at GitHub where I led design for the GitHub Enterprise products.</p>
+    </div>  
+  </div>
+</div>
 
 <div class="divider">
   <div class="content-wrapper">
