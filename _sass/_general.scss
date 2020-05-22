@@ -2,6 +2,7 @@
 
 html, body {
   background: #fff;
+  transition: background-color 1s ease;
   color: #000;
   font-family: 'Inter', sans-serif;
   letter-spacing: -0.004em;
@@ -11,7 +12,7 @@ html, body {
   font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
   font-size: 16px;
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .content-wrapper {
@@ -74,6 +75,30 @@ html, body {
   }
 }
 
+.panel {
+  min-height: 100vh;
+}
+
+.color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.color-sisu {
+  background-color: #FF6F61;
+}
+
+.color-github {
+  background-color: #111;
+}
+
+.color-hallmonitor {
+  background-color: #FFC33E;
+}
+
+.color-gumroad {
+  background-color: #efefe9;
+}
+
 .p-large {
   font-size: 1.125rem;
   line-height: 2.125rem;
@@ -106,7 +131,7 @@ html, body {
     margin: 0 auto;
 
     .item {
-      padding-top: 30px;
+      padding-top: 32px;
       width: 25%;
 
       .circle {
